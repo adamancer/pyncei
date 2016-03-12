@@ -2,7 +2,7 @@ pyncei
 ======
 
 This module provides tools to request data from the [Climate Data Online
-webservices](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted
+webservices](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted)
 provided by NOAA's National Centers for Environmental information (formerly
 the National Center for Climate Data). Install with:
 
@@ -68,6 +68,7 @@ using NCEIReader.map_term(), called manually here:
 
 ```python
 ncei.map_term('District of Columbia', 'locations')
+
 ('FIPS:11', True)
 ```
 
@@ -78,10 +79,12 @@ NCEIReader.find_in_endpoint() and NCEI.find_all():
 
 ```python
 ncei.find_in_endpoint('District of Columbia', 'locations')
+
 ['FIPS:11 => District of Columbia',
  'FIPS:11001 => District of Columbia County, DC']
 
 ncei.find_all('temperature')
+
 [('datacategories', 'ANNTEMP', 'Annual Temperature'),
  ('datacategories', 'AUTEMP', 'Autumn Temperature'),...]
 ```
