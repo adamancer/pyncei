@@ -1,0 +1,11 @@
+ANNUAL,Annual Summaries
+GHCND,Daily Summaries
+GHCNDMS,Monthly Summaries
+NEXRAD2,Weather Radar (Level II)
+NEXRAD3,Weather Radar (Level III)
+NORMAL_ANN,Normals Annual/Seasonal
+NORMAL_DLY,Normals Daily
+NORMAL_HLY,Normals Hourly
+NORMAL_MLY,Normals Monthly
+PRECIP_15,Precipitation 15 Minute
+PRECIP_HLY,Precipitation Hourly

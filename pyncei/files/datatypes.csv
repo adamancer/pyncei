@@ -1,0 +1,1461 @@
+ACMC,Average cloudiness midnight to midnight from 30-second ceilometer data (percent)
+ACMH,Average cloudiness midnight to midnight from manual observations (percent)
+ACSC,Average cloudiness sunrise to sunset from 30-second ceilometer data (percent)
+ACSH,Average cloudiness sunrise to sunset from manual observations (percent)
+ALL,Base Data
+ANN-CLDD-BASE45,Long-term averages of annual cooling degree days with base 45F
+ANN-CLDD-BASE50,Long-term averages of annual cooling degree days with base 50F
+ANN-CLDD-BASE55,Long-term averages of annual cooling degree days with base 55F
+ANN-CLDD-BASE57,Long-term averages of annual cooling degree days with base 57F
+ANN-CLDD-BASE60,Long-term averages of annual cooling degree days with base 60F
+ANN-CLDD-BASE70,Long-term averages of annual cooling degree days with base 70F
+ANN-CLDD-BASE72,Long-term averages of annual cooling degree days with base 72F
+ANN-CLDD-NORMAL,Long-term averages of annual cooling degree days with base 65F
+ANN-DUTR-NORMAL,Long-term averages of annual diurnal temperature range
+ANN-GRDD-BASE40,Long-term averages of annual growing degree days with base 40F
+ANN-GRDD-BASE45,Long-term averages of annual growing degree days with base 45F
+ANN-GRDD-BASE50,Long-term averages of annual growing degree days with base 50F
+ANN-GRDD-BASE55,Long-term averages of annual growing degree days with base 55F
+ANN-GRDD-BASE57,Long-term averages of annual growing degree days with base 57F
+ANN-GRDD-BASE60,Long-term averages of annual growing degree days with base 60F
+ANN-GRDD-BASE65,Long-term averages of annual growing degree days with base 65F
+ANN-GRDD-BASE70,Long-term averages of annual growing degree days with base 70F
+ANN-GRDD-BASE72,Long-term averages of annual growing degree days with base 72F
+ANN-GRDD-TB4886,Long-term averages of annual growing degree days with truncated bases 48F and 86F
+ANN-GRDD-TB5086,Long-term averages of annual growing degree days with truncated bases 50F and 86F
+ANN-HTDD-BASE40,Long-term averages of annual heating degree days with base 40F
+ANN-HTDD-BASE45,Long-term averages of annual heating degree days with base 45F
+ANN-HTDD-BASE50,Long-term averages of annual heating degree days with base 50F
+ANN-HTDD-BASE55,Long-term averages of annual heating degree days with base 55F
+ANN-HTDD-BASE57,Long-term averages of annual heating degree days with base 57F
+ANN-HTDD-BASE60,Long-term averages of annual heating degree days with base 60F
+ANN-HTDD-NORMAL,Long-term averages of annual heating degree days with base 65F
+ANN-PRCP-AVGNDS-GE001HI,Long-term averages of number of days during the year with precipitation >= 0.01 inches
+ANN-PRCP-AVGNDS-GE010HI,Long-term averages of number of days during the year with precipitation >= 0.10 inches
+ANN-PRCP-AVGNDS-GE050HI,Long-term averages of number of days during the year with precipitation >= 0.50 inches
+ANN-PRCP-AVGNDS-GE100HI,Long-term averages of number of days during the year with precipitation >= 1.00 inches
+ANN-PRCP-NORMAL,Long-term averages of annual precipitation totals
+ANN-SNOW-AVGNDS-GE001TI,Long-term averages of number of days during the year with snowfall >= 0.1 inches
+ANN-SNOW-AVGNDS-GE010TI,Long-term averages of number of days during the year with snowfall >= 1.0 inches
+ANN-SNOW-AVGNDS-GE030TI,Long-term averages of number of days during the year with snowfall >= 3.0 inches
+ANN-SNOW-AVGNDS-GE050TI,Long-term averages of number of days during the year with snowfall >= 5.0 inches
+ANN-SNOW-AVGNDS-GE100TI,Long-term averages of number of days during the year with snowfall >= 10.0 inches
+ANN-SNOW-NORMAL,Long-term averages of annual snowfall totals
+ANN-SNWD-AVGNDS-GE001WI,Long-term averages of number of days during the year with snow depth >= 1 inch
+ANN-SNWD-AVGNDS-GE003WI,Long-term averages of number of days during the year with snow depth >= 3 inches
+ANN-SNWD-AVGNDS-GE005WI,Long-term averages of number of days during the year with snow depth >=5 inches
+ANN-SNWD-AVGNDS-GE010WI,Long-term averages of number of days during the year with snow depth >=10 inches
+ANN-TAVG-NORMAL,Long-term averages of annual average temperature
+ANN-TMAX-AVGNDS-GRTH040,Long-term average number of days per year where tmax is greater than or equal to 40F
+ANN-TMAX-AVGNDS-GRTH050,Long-term average number of days per year where tmax is greater than or equal to 50F
+ANN-TMAX-AVGNDS-GRTH060,Long-term average number of days per year where tmax is greater than or equal to 60F
+ANN-TMAX-AVGNDS-GRTH070,Long-term average number of days per year where tmax is greater than or equal to 70F
+ANN-TMAX-AVGNDS-GRTH080,Long-term average number of days per year where tmax is greater than or equal to 80F
+ANN-TMAX-AVGNDS-GRTH090,Long-term average number of days per year where tmax is greater than or equal to 90F
+ANN-TMAX-AVGNDS-GRTH100,Long-term average number of days per year where tmax is greater than or equal to 100F
+ANN-TMAX-AVGNDS-LSTH032,Long-term average number of days per year where tmax is less than or equal to 32F
+ANN-TMAX-NORMAL,Long-term averages of annual maximum temperature
+ANN-TMIN-AVGNDS-LSTH000,Long-term average number of days per year where tmin is less than or equal to 0F
+ANN-TMIN-AVGNDS-LSTH010,Long-term average number of days per year where tmin is less than or equal to 10F
+ANN-TMIN-AVGNDS-LSTH020,Long-term average number of days per year where tmin is less than or equal to 20F
+ANN-TMIN-AVGNDS-LSTH032,Long-term average number of days per year where tmin is less than or equal to 32F
+ANN-TMIN-AVGNDS-LSTH040,Long-term average number of days per year where tmin is less than or equal to 40F
+ANN-TMIN-AVGNDS-LSTH050,Long-term average number of days per year where tmin is less than or equal to 50F
+ANN-TMIN-AVGNDS-LSTH060,Long-term average number of days per year where tmin is less than or equal to 60F
+ANN-TMIN-AVGNDS-LSTH070,Long-term average number of days per year where tmin is less than or equal to 70F
+ANN-TMIN-NORMAL,Long-term averages of annual minimum temperature
+ANN-TMIN-PRBFST-T16FP10,10% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T16FP20,20% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T16FP30,30% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T16FP40,40% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T16FP50,50% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T16FP60,60% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T16FP70,70% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T16FP80,80% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T16FP90,90% probability date of first 16F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP10,10% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP20,20% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP30,30% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP40,40% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP50,50% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP60,60% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP70,70% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP80,80% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T20FP90,90% probability date of first 20F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP10,10% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP20,20% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP30,30% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP40,40% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP50,50% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP60,60% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP70,70% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP80,80% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T24FP90,90% probability date of first 24F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP10,10% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP20,20% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP30,30% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP40,40% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP50,50% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP60,60% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP70,70% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP80,80% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T28FP90,90% probability date of first 28F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP10,10% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP20,20% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP30,30% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP40,40% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP50,50% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP60,60% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP70,70% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP80,80% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T32FP90,90% probability date of first 32F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP10,10% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP20,20% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP30,30% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP40,40% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP50,50% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP60,60% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP70,70% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP80,80% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBFST-T36FP90,90% probability date of first 36F occurrence or earlier
+ANN-TMIN-PRBGSL-T16FP10,10% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T16FP20,20% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T16FP30,30% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T16FP40,40% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T16FP50,50% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T16FP60,60% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T16FP70,70% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T16FP80,80% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T16FP90,90% probability of 16F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP10,10% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP20,20% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP30,30% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP40,40% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP50,50% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP60,60% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP70,70% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP80,80% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T20FP90,90% probability of 20F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP10,10% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP20,20% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP30,30% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP40,40% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP50,50% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP60,60% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP70,70% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP80,80% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T24FP90,90% probability of 24F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP10,10% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP20,20% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP30,30% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP40,40% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP50,50% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP60,60% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP70,70% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP80,80% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T28FP90,90% probability of 28F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP10,10% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP20,20% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP30,30% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP40,40% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP50,50% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP60,60% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP70,70% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP80,80% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T32FP90,90% probability of 32F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP10,10% probability of 36F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP20,20% probability of 36F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP30,30% probability of 36F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP40,40% probability of 36F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP50,50% probability of 36F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP60,60% probability of 36F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP70,70% probability of 36F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP80,80% probability of 36F growing season length or longer
+ANN-TMIN-PRBGSL-T36FP90,90% probability of 36F growing season length or longer
+ANN-TMIN-PRBLST-T16FP10,10% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T16FP20,20% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T16FP30,30% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T16FP40,40% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T16FP50,50% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T16FP60,60% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T16FP70,70% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T16FP80,80% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T16FP90,90% probability date of last 16F occurrence or later
+ANN-TMIN-PRBLST-T20FP10,10% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T20FP20,20% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T20FP30,30% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T20FP40,40% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T20FP50,50% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T20FP60,60% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T20FP70,70% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T20FP80,80% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T20FP90,90% probability date of last 20F occurrence or later
+ANN-TMIN-PRBLST-T24FP10,10% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T24FP20,20% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T24FP30,30% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T24FP40,40% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T24FP50,50% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T24FP60,60% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T24FP70,70% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T24FP80,80% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T24FP90,90% probability date of last 24F occurrence or later
+ANN-TMIN-PRBLST-T28FP10,10% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T28FP20,20% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T28FP30,30% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T28FP40,40% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T28FP50,50% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T28FP60,60% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T28FP70,70% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T28FP80,80% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T28FP90,90% probability date of last 28F occurrence or later
+ANN-TMIN-PRBLST-T32FP10,10% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T32FP20,20% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T32FP30,30% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T32FP40,40% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T32FP50,50% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T32FP60,60% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T32FP70,70% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T32FP80,80% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T32FP90,90% probability date of last 32F occurrence or later
+ANN-TMIN-PRBLST-T36FP10,10% probability date of last 36F occurrence or later
+ANN-TMIN-PRBLST-T36FP20,20% probability date of last 36F occurrence or later
+ANN-TMIN-PRBLST-T36FP30,30% probability date of last 36F occurrence or later
+ANN-TMIN-PRBLST-T36FP40,40% probability date of last 36F occurrence or later
+ANN-TMIN-PRBLST-T36FP50,50% probability date of last 36F occurrence or later
+ANN-TMIN-PRBLST-T36FP60,60% probability date of last 36F occurrence or later
+ANN-TMIN-PRBLST-T36FP70,70% probability date of last 36F occurrence or later
+ANN-TMIN-PRBLST-T36FP80,80% probability date of last 36F occurrence or later
+ANN-TMIN-PRBLST-T36FP90,90% probability date of last 36F occurrence or later
+ANN-TMIN-PRBOCC-LSTH016,probability of 16F or below at least once in the year
+ANN-TMIN-PRBOCC-LSTH020,probability of 20F or below at least once in the year
+ANN-TMIN-PRBOCC-LSTH024,probability of 24F or below at least once in the year
+ANN-TMIN-PRBOCC-LSTH028,probability of 28F or below at least once in the year
+ANN-TMIN-PRBOCC-LSTH032,probability of 32F or below at least once in the year
+ANN-TMIN-PRBOCC-LSTH036,probability of 36F or below at least once in the year
+AWND,Average daily wind speed (tenths of meters per second)
+CLDD,Cooling degree days
+DAA,Digital Accumulation Array(One Hour Precipitation total (256 levels) with Dual Pol. algorithm)
+DAEV,Number of days included in the multiday evaporation total (MDEV)
+DAPR,Number of days included in the multiday precipitation total (MDPR)
+DASF,Number of days included in the multiday snow fall total (MDSF) 
+DATN,Number of days included in the multiday minimum temperature (MDTN)
+DATX,Number of days included in the multiday maximum temperature (MDTX)
+DAWM,Number of days included in the multiday wind movement (MDWM)
+DHR,Digital Hybrid Scan Reflectivity
+DJF-CLDD-BASE45,Long-term averages of winter cooling degree days with base 45F
+DJF-CLDD-BASE50,Long-term averages of winter cooling degree days with base 50F
+DJF-CLDD-BASE55,Long-term averages of winter cooling degree days with base 55F
+DJF-CLDD-BASE57,Long-term averages of winter cooling degree days with base 57F
+DJF-CLDD-BASE60,Long-term averages of winter cooling degree days with base 60F
+DJF-CLDD-BASE70,Long-term averages of winter cooling degree days with base 70F
+DJF-CLDD-BASE72,Long-term averages of winter cooling degree days with base 72F
+DJF-CLDD-NORMAL,Long-term averages of winter cooling degree days with base 65F
+DJF-DUTR-NORMAL,Long-term averages of winter diurnal temperature range
+DJF-GRDD-BASE40,Long-term averages of winter growing degree days with base 40F
+DJF-GRDD-BASE45,Long-term averages of winter growing degree days with base 45F
+DJF-GRDD-BASE50,Long-term averages of winter growing degree days with base 50F
+DJF-GRDD-BASE55,Long-term averages of winter growing degree days with base 55F
+DJF-GRDD-BASE57,Long-term averages of winter growing degree days with base 57F
+DJF-GRDD-BASE60,Long-term averages of winter growing degree days with base 60F
+DJF-GRDD-BASE65,Long-term averages of winter growing degree days with base 65F
+DJF-GRDD-BASE70,Long-term averages of winter growing degree days with base 70F
+DJF-GRDD-BASE72,Long-term averages of winter growing degree days with base 72F
+DJF-GRDD-TB4886,Long-term averages of winter growing degree days with truncated bases 48F and 86F
+DJF-GRDD-TB5086,Long-term averages of winter growing degree days with truncated bases 50F and 86F
+DJF-HTDD-BASE40,Long-term averages of winter heating degree days with base 40F
+DJF-HTDD-BASE45,Long-term averages of winter heating degree days with base 45F
+DJF-HTDD-BASE50,Long-term averages of winter heating degree days with base 50F
+DJF-HTDD-BASE55,Long-term averages of winter heating degree days with base 55F
+DJF-HTDD-BASE57,Long-term averages of winter heating degree days with base 57F
+DJF-HTDD-BASE60,Long-term averages of winter heating degree days with base 60F
+DJF-HTDD-NORMAL,Long-term averages of winter heating degree days with base 65F
+DJF-PRCP-AVGNDS-GE001HI,Long-term averages of number of days during December-February with precipitation >= 0.01 inches
+DJF-PRCP-AVGNDS-GE010HI,Long-term averages of number of days during December-February with precipitation >= 0.10 inches
+DJF-PRCP-AVGNDS-GE050HI,Long-term averages of number of days during December-February with precipitation >= 0.50 inches
+DJF-PRCP-AVGNDS-GE100HI,Long-term averages of number of days during December-February with precipitation >= 1.00 inches
+DJF-PRCP-NORMAL,Long-term averages of seasonal precipitation totals forDecember-February
+DJF-SNOW-AVGNDS-GE001TI,Long-term averages of number of days during December-February with snowfall >= 0.1 inches
+DJF-SNOW-AVGNDS-GE010TI,Long-term averages of number of days during December-February with snowfall >= 1.0 inches
+DJF-SNOW-AVGNDS-GE030TI,Long-term averages of number of days during December-February with snowfall >= 3.0 inches
+DJF-SNOW-AVGNDS-GE050TI,Long-term averages of number of days during December-February with snowfall >= 5.0 inches
+DJF-SNOW-AVGNDS-GE100TI,Long-term averages of number of days during December-February with snowfall >= 10.0 inches
+DJF-SNOW-NORMAL,Long-term averages of seasonal snowfall totals for December-February
+DJF-SNWD-AVGNDS-GE001WI,Long-term averages of number of days during December-February with snow depth >= 1 inch
+DJF-SNWD-AVGNDS-GE003WI,Long-term averages of number of days during December-February with snow depth >= 3 inches
+DJF-SNWD-AVGNDS-GE005WI,Long-term averages of number of days during December-February with snow depth >= 5 inches
+DJF-SNWD-AVGNDS-GE010WI,Long-term averages of number of days during December-February with snow depth >= 10 inches
+DJF-TAVG-NORMAL,Long-term averages of winter average temperature
+DJF-TMAX-AVGNDS-GRTH040,Long-term average number of days per winter where tmax is greater than or equal to 40F
+DJF-TMAX-AVGNDS-GRTH050,Long-term average number of days per winter where tmax is greater than or equal to 50F
+DJF-TMAX-AVGNDS-GRTH060,Long-term average number of days per winter where tmax is greater than or equal to 60F
+DJF-TMAX-AVGNDS-GRTH070,Long-term average number of days per winter where tmax is greater than or equal to 70F
+DJF-TMAX-AVGNDS-GRTH080,Long-term average number of days per winter where tmax is greater than or equal to 80F
+DJF-TMAX-AVGNDS-GRTH090,Long-term average number of days per winter where tmax is greater than or equal to 90F
+DJF-TMAX-AVGNDS-GRTH100,Long-term average number of days per winter where tmax is greater than or equal to 100F
+DJF-TMAX-AVGNDS-LSTH032,Long-term average number of days per winter where tmax is less than or equal to 32F
+DJF-TMAX-NORMAL,Long-term averages of winter maximum temperature
+DJF-TMIN-AVGNDS-LSTH000,Long-term average number of days per winter where tmin is less than or equal to 0F
+DJF-TMIN-AVGNDS-LSTH010,Long-term average number of days per winter where tmin is less than or equal to 10F
+DJF-TMIN-AVGNDS-LSTH020,Long-term average number of days per winter where tmin is less than or equal to 20F
+DJF-TMIN-AVGNDS-LSTH032,Long-term average number of days per winter where tmin is less than or equal to 32F
+DJF-TMIN-AVGNDS-LSTH040,Long-term average number of days per winter where tmin is less than or equal to 40F
+DJF-TMIN-AVGNDS-LSTH050,Long-term average number of days per winter where tmin is less than or equal to 50F
+DJF-TMIN-AVGNDS-LSTH060,Long-term average number of days per winter where tmin is less than or equal to 60F
+DJF-TMIN-AVGNDS-LSTH070,Long-term average number of days per winter where tmin is less than or equal to 70F
+DJF-TMIN-NORMAL,Long-term averages of winter minimum temperature
+DLY-CLDD-BASE45,Long-term averages of daily cooling degree days with base 45F
+DLY-CLDD-BASE50,Long-term averages of daily cooling degree days with base 50F
+DLY-CLDD-BASE55,Long-term averages of daily cooling degree days with base 55F
+DLY-CLDD-BASE57,Long-term averages of daily cooling degree days with base 57F
+DLY-CLDD-BASE60,Long-term averages of daily cooling degree days with base 60F
+DLY-CLDD-BASE70,Long-term averages of daily cooling degree days with base 70F
+DLY-CLDD-BASE72,Long-term averages of daily cooling degree days with base 72F
+DLY-CLDD-NORMAL,Long-term averages of daily cooling degree days with base 65F
+DLY-DUTR-NORMAL,Long-term averages of daily diurnal temperature range
+DLY-DUTR-STDDEV,Long-term standard deviations of daily diurnal temperature range
+DLY-GRDD-BASE40,Long-term averages of daily growing degree days with base 40F
+DLY-GRDD-BASE45,Long-term averages of daily growing degree days with base 45F
+DLY-GRDD-BASE50,Long-term averages of daily growing degree days with base 50F
+DLY-GRDD-BASE55,Long-term averages of daily growing degree days with base 55F
+DLY-GRDD-BASE57,Long-term averages of daily growing degree days with base 57F
+DLY-GRDD-BASE60,Long-term averages of daily growing degree days with base 60F
+DLY-GRDD-BASE65,Long-term averages of daily growing degree days with base 65F
+DLY-GRDD-BASE70,Long-term averages of daily growing degree days with base 70F
+DLY-GRDD-BASE72,Long-term averages of daily growing degree days with base 72F
+DLY-GRDD-TB4886,Long-term averages of daily growing degree days with truncated bases 48F and 86F
+DLY-GRDD-TB5086,Long-term averages of daily growing degree days with truncated bases 50F and 86F
+DLY-HTDD-BASE40,Long-term averages of daily heating degree days with base 40F
+DLY-HTDD-BASE45,Long-term averages of daily heating degree days with base 45F
+DLY-HTDD-BASE50,Long-term averages of daily heating degree days with base 50F
+DLY-HTDD-BASE55,Long-term averages of daily heating degree days with base 55F
+DLY-HTDD-BASE57,Long-term averages of daily heating degree days with base 57F
+DLY-HTDD-BASE60,Long-term averages of daily heating degree days with base 60F
+DLY-HTDD-NORMAL,Long-term averages of daily heating degree days with base 65F
+DLY-PRCP-25PCTL,25th percentiles of daily nonzero precipitation totals for 29-day windows centered on each day of the year
+DLY-PRCP-50PCTL,50th percentiles of daily nonzero precipitation totals for 29-day windows centered on each day of the year
+DLY-PRCP-75PCTL,75th percentiles of daily nonzero precipitation totals for 29-day windows centered on each day of the year
+DLY-PRCP-PCTALL-GE001HI,Probability of precipitation >= 0.01 inches for 29-day windows centered on each day of the year
+DLY-PRCP-PCTALL-GE010HI,Probability of precipitation >= 0.10 inches for 29-day windows centered on each day of the year
+DLY-PRCP-PCTALL-GE050HI,Probability of precipitation >= 0.50 inches for 29-day windows centered on each day of the year
+DLY-PRCP-PCTALL-GE100HI,Probability of precipitation >= 1.00 inches for 29-day windows centered on each day of the year
+DLY-SNOW-25PCTL,25th percentiles of daily nonzero snowfall totals for 29-day windows centered on each day of the year
+DLY-SNOW-50PCTL,50th percentiles of daily nonzero snowfall totals for 29-day windows centered on each day of the year
+DLY-SNOW-75PCTL,75th percentiles of daily nonzero snowfall totals for 29-day windows centered on each day of the year
+DLY-SNOW-PCTALL-GE001TI,Probability of snowfall >= 0.1 inches for 29-day windows centered on each day of the year
+DLY-SNOW-PCTALL-GE010TI,Probability of snowfall >= 1.0 inches for 29-day windows centered on each day of the year
+DLY-SNOW-PCTALL-GE030TI,Probability of snowfall >= 3.0 inches for 29-day windows centered on each day of the year
+DLY-SNOW-PCTALL-GE050TI,Probability of snowfall >= 5.0 inches for 29-day windows centered on each day of the year
+DLY-SNOW-PCTALL-GE100TI,Probability of snowfall >= 10 inches for 29-day windows centered on each day of the year
+DLY-SNWD-25PCTL,25th percentiles of daily nonzero snow depth for 29-day windows centered on each day of the year
+DLY-SNWD-50PCTL,50th percentiles of daily nonzero snow depth for 29-day windows centered on each day of the year
+DLY-SNWD-75PCTL,75th percentiles of daily nonzero snow depth for 29-day windows centered on each day of the year
+DLY-SNWD-PCTALL-GE001WI,Probability of snow depth >= 1 inch for 29-day windows centered on each day of the year
+DLY-SNWD-PCTALL-GE003WI,Probability of snow depth >= 3 inches for 29-day windows centered on each day of the year
+DLY-SNWD-PCTALL-GE005WI,Probability of snow depth >= 5 inches for 29-day windows centered on each day of the year
+DLY-SNWD-PCTALL-GE010WI,Probability of snow depth >= 10 inches for 29-day windows centered on each day of the year
+DLY-TAVG-NORMAL,Long-term averages of daily average temperature
+DLY-TAVG-STDDEV,Long-term standard deviations of daily average temperature
+DLY-TMAX-NORMAL,Long-term averages of daily maximum temperature
+DLY-TMAX-STDDEV,Long-term standard deviations of daily maximum temperature
+DLY-TMIN-NORMAL,Long-term averages of daily minimum temperature
+DLY-TMIN-STDDEV,Long-term standard deviations of daily minimum temperature
+DOD,One Hour Precipitation Difference = DAA-N1P
+DP01,Number of days with greater than or equal to 0.1 inch of precipitation
+DP05,Number of days with greater than or equal to 0.5 inch of precipitation
+DP10,Number of days with greater than or equal to 1.0 inch of precipitation
+DPA,Digital Precipitation Array
+DPNP,Departure from normal monthly precipitation.
+DPNT,Departure from normal monthly temperature.
+DPR,Instantaneous Precipitation Rate
+DSD,Storm Total Precipitation Difference = DTA-DSP
+DSNW,Number days with snow depth > 1 inch.
+DSP,Digital Storm Total Precipitation
+DT00,Number days with minimum temperature less than or equal to 0.0 F
+DT32,Number days with minimum temperature less than or equal to 32.0 F
+DT60,Number days with minimum temperature < 59 F. (Puerto Rico and Virgin Islands only.)
+DT70,Number days with maximum temperature > 70 F.  (Alaska only.)
+DT90,Number days with maximum temperature greater than or equal 90.0 F
+DTA,Digital Storm Total Accumulation(Storm Total Precipitation total (256 levels) with Dual Pol. algorithm)
+DVL,Digital Vertical Integrated Liquid
+DWPR,Number of days with non-zero precipitation included in multiday precipitation total (MDPR)
+DX32,Number days with maximum temperature less than or equal to 32.0 F
+DX60,Number days with maximum temperature < 59 F. (Puerto Rico and Virgin Islands only.)
+EET,Enhanced Echo Tops
+EMNT,Extreme minimum daily temperature
+EMXP,Extreme maximum daily precipitation
+EMXT,Extreme maximum daily temperature
+EVAP,Evaporation of water from evaporation pan (tenths of mm)
+FMTM,"Time of fastest mile or fastest 1-minute wind (hours and minutes, i.e, HHMM)"
+FRGB,Base of frozen ground layer (cm)
+FRGT,Top of frozen ground layer (cm)
+FRTH,Thickness of frozen ground layer (cm)
+FTM,Free Text Message
+GAHT,Difference between river and gauge height (cm)
+GSM,General Status Message
+HHC,Hybrid Hydrometeor Classification
+HLY-CLDH-NORMAL,Cooling degree hours
+HLY-CLOD-PCTBKN,Clouds broken percentage
+HLY-CLOD-PCTCLR,Clouds clear percentage
+HLY-CLOD-PCTFEW,Clouds few percentage
+HLY-CLOD-PCTOVC,Clouds overcast percentage
+HLY-CLOD-PCTSCT,Clouds scattered percentage
+HLY-DEWP-10PCTL,Dew point 10th percentile
+HLY-DEWP-90PCTL,Dew point 90th percentile
+HLY-DEWP-NORMAL,Dew point mean
+HLY-HIDX-NORMAL,Heat index mean
+HLY-HTDH-NORMAL,Heating degree hours
+HLY-PRES-10PCTL,Sea level pressure 10th percentile
+HLY-PRES-90PCTL,Sea level pressure 90th percentile
+HLY-PRES-NORMAL,Sea level pressure mean
+HLY-TEMP-10PCTL,Temperature 10th percentile
+HLY-TEMP-90PCTL,Temperature 90th percentile
+HLY-TEMP-NORMAL,Temperature mean
+HLY-WCHL-NORMAL,Wind chill mean
+HLY-WIND-1STDIR,Prevailing wind direction (1-8)
+HLY-WIND-1STPCT,Prevailing wind percentage
+HLY-WIND-2NDDIR,Secondary wind direction (1-8)
+HLY-WIND-2NDPCT,Secondary wind percentage
+HLY-WIND-AVGSPD,Average wind speed
+HLY-WIND-PCTCLM,Percentage calm
+HLY-WIND-VCTDIR,Mean wind vector direction
+HLY-WIND-VCTSPD,Mean wind vector magnitude
+HN0190,Highest minimum soil temperature for the month (degrees F)(cover: unknown
+HN0290,Highest minimum soil temperature for the month (degrees F)(cover: unknown
+HN0299,Highest minimum soil temperature for the month (degrees F)(cover: unknown
+HN0390,Highest minimum soil temperature for the month (degrees F)(cover: unknown
+HN1190,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1191,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1290,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1291,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1299,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1390,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1391,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1399,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1490,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN1499,Highest minimum soil temperature for the month (degrees F)(cover: grass
+HN2190,Highest minimum soil temperature for the month (degrees F)(cover: fallow
+HN2192,Highest minimum soil temperature for the month (degrees F)(cover: fallow
+HN2290,Highest minimum soil temperature for the month (degrees F)(cover: fallow
+HN2292,Highest minimum soil temperature for the month (degrees F)(cover: fallow
+HN2390,Highest minimum soil temperature for the month (degrees F)(cover: fallow
+HN2392,Highest minimum soil temperature for the month (degrees F)(cover: fallow
+HN3190,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3192,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3199,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3290,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3292,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3299,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3390,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3392,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3399,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3490,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3499,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3590,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3599,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3690,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN3699,Highest minimum soil temperature for the month (degrees F)(cover: bare ground
+HN5190,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5199,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5290,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5291,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5299,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5390,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5399,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5490,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5499,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5590,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5599,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN5699,Highest minimum soil temperature for the month (degrees F)(cover: sod
+HN6190,Highest minimum soil temperature for the month (degrees F)(cover: straw mulch
+HN7290,Highest minimum soil temperature for the month (degrees F)(cover: grass muck
+HN7293,Highest minimum soil temperature for the month (degrees F)(cover: grass muck
+HN8190,Highest minimum soil temperature for the month (degrees F)(cover: bare muck
+HN8193,Highest minimum soil temperature for the month (degrees F)(cover: bare muck
+HN8290,Highest minimum soil temperature for the month (degrees F)(cover: bare muck
+HN8293,Highest minimum soil temperature for the month (degrees F)(cover: bare muck
+HN8390,Highest minimum soil temperature for the month (degrees F)(cover: bare muck
+HN8393,Highest minimum soil temperature for the month (degrees F)(cover: bare muck
+HO01A0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO01P0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO01P1,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO01P2,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO02A0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO02P0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO02P1,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO02P2,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO03A0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO03P0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO03P1,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO03P2,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO04A0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO04P0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO04P1,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO04P2,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO05A0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO05P0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO05P1,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO05P2,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO07P0,Highest soil temperature at observation time (degrees F)(cover: unknown
+HO11A0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO11P0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO12A0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO12P0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO13A0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO13P0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO14A0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO14A1,Highest soil temperature at observation time (degrees F)(cover: grass
+HO14P0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO15A0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO15A1,Highest soil temperature at observation time (degrees F)(cover: grass
+HO15P0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO16A0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO16P0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO17A0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO17P0,Highest soil temperature at observation time (degrees F)(cover: grass
+HO21A0,Highest soil temperature at observation time (degrees F)(cover: fallow
+HO22A0,Highest soil temperature at observation time (degrees F)(cover: fallow
+HO23A0,Highest soil temperature at observation time (degrees F)(cover: fallow
+HO24A0,Highest soil temperature at observation time (degrees F)(cover: fallow
+HO25A0,Highest soil temperature at observation time (degrees F)(cover: fallow
+HO31A0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO31P0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO32A0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO32P0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO33A0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO33P0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO34A0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO34A2,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO34P0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO35A0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO35A2,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO35P0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO36A0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO36P0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO37A0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO37P0,Highest soil temperature at observation time (degrees F)(cover: bare ground
+HO51A0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO51P0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO52A0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO52P0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO53A0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO53P0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO54A0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO54P0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO55A0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO55P0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO56A0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO56P0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO57A0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO57P0,Highest soil temperature at observation time (degrees F)(cover: sod
+HO84A0,Highest soil temperature at observation time (degrees F)(cover: bare muck
+HO84A3,Highest soil temperature at observation time (degrees F)(cover: bare muck
+HO85A0,Highest soil temperature at observation time (degrees F)(cover: bare muck
+HO85A3,Highest soil temperature at observation time (degrees F)(cover: bare muck
+HPCP,Precipitation (100th of an inch)
+HSNW,Highest snowfall
+HTDD,Heating degree days
+HTMN,Highest minimum temperature
+HTMX,Highest maximum temperature
+HX0190,Highest maximum soil temperature for the month (degrees F)(cover: unknown
+HX0290,Highest maximum soil temperature for the month (degrees F)(cover: unknown
+HX0299,Highest maximum soil temperature for the month (degrees F)(cover: unknown
+HX0390,Highest maximum soil temperature for the month (degrees F)(cover: unknown
+HX1190,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1191,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1290,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1291,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1299,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1390,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1391,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1399,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1490,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1499,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1599,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX1799,Highest maximum soil temperature for the month (degrees F)(cover: grass
+HX2190,Highest maximum soil temperature for the month (degrees F)(cover: fallow
+HX2192,Highest maximum soil temperature for the month (degrees F)(cover: fallow
+HX2290,Highest maximum soil temperature for the month (degrees F)(cover: fallow
+HX2292,Highest maximum soil temperature for the month (degrees F)(cover: fallow
+HX2390,Highest maximum soil temperature for the month (degrees F)(cover: fallow
+HX2392,Highest maximum soil temperature for the month (degrees F)(cover: fallow
+HX3190,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3192,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3199,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3290,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3292,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3299,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3390,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3392,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3399,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3490,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3499,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3590,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3599,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX3699,Highest maximum soil temperature for the month (degrees F)(cover: bare ground
+HX5190,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5199,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5290,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5291,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5299,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5390,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5399,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5490,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5499,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5590,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5599,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX5699,Highest maximum soil temperature for the month (degrees F)(cover: sod
+HX6190,Highest maximum soil temperature for the month (degrees F)(cover: straw mulch
+HX7290,Highest maximum soil temperature for the month (degrees F)(cover: grass muck
+HX7293,Highest maximum soil temperature for the month (degrees F)(cover: grass muck
+HX8190,Highest maximum soil temperature for the month (degrees F)(cover: bare muck
+HX8193,Highest maximum soil temperature for the month (degrees F)(cover: bare muck
+HX8290,Highest maximum soil temperature for the month (degrees F)(cover: bare muck
+HX8293,Highest maximum soil temperature for the month (degrees F)(cover: bare muck
+HX8390,Highest maximum soil temperature for the month (degrees F)(cover: bare muck
+HX8393,Highest maximum soil temperature for the month (degrees F)(cover: bare muck
+JJA-CLDD-BASE45,Long-term averages of summer cooling degree days with base 45F
+JJA-CLDD-BASE50,Long-term averages of summer cooling degree days with base 50F
+JJA-CLDD-BASE55,Long-term averages of summer cooling degree days with base 55F
+JJA-CLDD-BASE57,Long-term averages of summer cooling degree days with base 57F
+JJA-CLDD-BASE60,Long-term averages of summer cooling degree days with base 60F
+JJA-CLDD-BASE70,Long-term averages of summer cooling degree days with base 70F
+JJA-CLDD-BASE72,Long-term averages of summer cooling degree days with base 72F
+JJA-CLDD-NORMAL,Long-term averages of summer cooling degree days with base 65F
+JJA-DUTR-NORMAL,Long-term averages of summer diurnal temperature range
+JJA-GRDD-BASE40,Long-term averages of summer growing degree days with base 40F
+JJA-GRDD-BASE45,Long-term averages of summer growing degree days with base 45F
+JJA-GRDD-BASE50,Long-term averages of summer growing degree days with base 50F
+JJA-GRDD-BASE55,Long-term averages of summer growing degree days with base 55F
+JJA-GRDD-BASE57,Long-term averages of summer growing degree days with base 57F
+JJA-GRDD-BASE60,Long-term averages of summer growing degree days with base 60F
+JJA-GRDD-BASE65,Long-term averages of summer growing degree days with base 65F
+JJA-GRDD-BASE70,Long-term averages of summer growing degree days with base 70F
+JJA-GRDD-BASE72,Long-term averages of summer growing degree days with base 72F
+JJA-GRDD-TB4886,Long-term averages of summer growing degree days with truncated bases 48F and 86F
+JJA-GRDD-TB5086,Long-term averages of summer growing degree days with truncated bases 50F and 86F
+JJA-HTDD-BASE40,Long-term averages of summer heating degree days with base 40F
+JJA-HTDD-BASE45,Long-term averages of summer heating degree days with base 45F
+JJA-HTDD-BASE50,Long-term averages of summer heating degree days with base 50F
+JJA-HTDD-BASE55,Long-term averages of summer heating degree days with base 55F
+JJA-HTDD-BASE57,Long-term averages of summer heating degree days with base 57F
+JJA-HTDD-BASE60,Long-term averages of summer heating degree days with base 60F
+JJA-HTDD-NORMAL,Long-term averages of summer heating degree days with base 65F
+JJA-PRCP-AVGNDS-GE001HI,Long-term averages of number of days during June-August with precipitation >= 0.01 inches
+JJA-PRCP-AVGNDS-GE010HI,Long-term averages of number of days during June-August with precipitation >= 0.10 inches
+JJA-PRCP-AVGNDS-GE050HI,Long-term averages of number of days during June-August with precipitation >= 0.50 inches
+JJA-PRCP-AVGNDS-GE100HI,Long-term averages of number of days during June-August with precipitation >= 1.00 inches
+JJA-PRCP-NORMAL,Long-term averages of seasonal precipitation totals for June-August
+JJA-SNOW-AVGNDS-GE001TI,Long-term averages of number of days during June-August with snowfall >= 0.1 inches
+JJA-SNOW-AVGNDS-GE010TI,Long-term averages of number of days during June-August with snowfall >= 1.0 inches
+JJA-SNOW-AVGNDS-GE030TI,Long-term averages of number of days during June-August with snowfall >= 3.0 inches
+JJA-SNOW-AVGNDS-GE050TI,Long-term averages of number of days during June-August with snowfall >= 5.0 inches
+JJA-SNOW-AVGNDS-GE100TI,Long-term averages of number of days during June-August with snowfall >= 10.0 inches
+JJA-SNOW-NORMAL,Long-term averages of seasonal snowfall totals for June-August
+JJA-SNWD-AVGNDS-GE001WI,Long-term averages of number of days during June-August with snow depth >= 1 inch
+JJA-SNWD-AVGNDS-GE003WI,Long-term averages of number of days during June-August with snow depth >= 3 inches
+JJA-SNWD-AVGNDS-GE005WI,Long-term averages of number of days during June-August with snow depth >= 5 inches
+JJA-SNWD-AVGNDS-GE010WI,Long-term averages of number of days during June-August with snow depth >= 10 inches
+JJA-TAVG-NORMAL,Long-term averages of summer average temperature
+JJA-TMAX-AVGNDS-GRTH040,Long-term average number of days per summer where tmax is greater than or equal to 40F
+JJA-TMAX-AVGNDS-GRTH050,Long-term average number of days per summer where tmax is greater than or equal to 50F
+JJA-TMAX-AVGNDS-GRTH060,Long-term average number of days per summer where tmax is greater than or equal to 60F
+JJA-TMAX-AVGNDS-GRTH070,Long-term average number of days per summer where tmax is greater than or equal to 70F
+JJA-TMAX-AVGNDS-GRTH080,Long-term average number of days per summer where tmax is greater than or equal to 80F
+JJA-TMAX-AVGNDS-GRTH090,Long-term average number of days per summer where tmax is greater than or equal to 90F
+JJA-TMAX-AVGNDS-GRTH100,Long-term average number of days per summer where tmax is greater than or equal to 100F
+JJA-TMAX-AVGNDS-LSTH032,Long-term average number of days per summer where tmax is less than or equal to 32F
+JJA-TMAX-NORMAL,Long-term averages of summer maximum temperature
+JJA-TMIN-AVGNDS-LSTH000,Long-term average number of days per summer where tmin is less than or equal to 0F
+JJA-TMIN-AVGNDS-LSTH010,Long-term average number of days per summer where tmin is less than or equal to 10F
+JJA-TMIN-AVGNDS-LSTH020,Long-term average number of days per summer where tmin is less than or equal to 20F
+JJA-TMIN-AVGNDS-LSTH032,Long-term average number of days per summer where tmin is less than or equal to 32F
+JJA-TMIN-AVGNDS-LSTH040,Long-term average number of days per summer where tmin is less than or equal to 40F
+JJA-TMIN-AVGNDS-LSTH050,Long-term average number of days per summer where tmin is less than or equal to 50F
+JJA-TMIN-AVGNDS-LSTH060,Long-term average number of days per summer where tmin is less than or equal to 60F
+JJA-TMIN-AVGNDS-LSTH070,Long-term average number of days per summer where tmin is less than or equal to 70F
+JJA-TMIN-NORMAL,Long-term averages of summer minimum temperature
+LN0190,Lowest minimum soil temperature for the month (degrees F)(cover: unknown
+LN0290,Lowest minimum soil temperature for the month (degrees F)(cover: unknown
+LN0299,Lowest minimum soil temperature for the month (degrees F)(cover: unknown
+LN0390,Lowest minimum soil temperature for the month (degrees F)(cover: unknown
+LN1190,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1191,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1290,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1291,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1299,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1390,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1391,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1399,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1490,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN1499,Lowest minimum soil temperature for the month (degrees F)(cover: grass
+LN2190,Lowest minimum soil temperature for the month (degrees F)(cover: fallow
+LN2192,Lowest minimum soil temperature for the month (degrees F)(cover: fallow
+LN2290,Lowest minimum soil temperature for the month (degrees F)(cover: fallow
+LN2292,Lowest minimum soil temperature for the month (degrees F)(cover: fallow
+LN2390,Lowest minimum soil temperature for the month (degrees F)(cover: fallow
+LN2392,Lowest minimum soil temperature for the month (degrees F)(cover: fallow
+LN3190,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3192,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3199,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3290,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3292,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3299,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3390,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3392,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3399,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3490,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3499,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3590,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3599,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3690,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN3699,Lowest minimum soil temperature for the month (degrees F)(cover: bare ground
+LN5190,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5199,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5290,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5291,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5299,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5390,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5399,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5490,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5499,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5590,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5599,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN5699,Lowest minimum soil temperature for the month (degrees F)(cover: sod
+LN6190,Lowest minimum soil temperature for the month (degrees F)(cover: straw mulch
+LN7290,Lowest minimum soil temperature for the month (degrees F)(cover: grass muck
+LN7293,Lowest minimum soil temperature for the month (degrees F)(cover: grass muck
+LN8190,Lowest minimum soil temperature for the month (degrees F)(cover: bare muck
+LN8193,Lowest minimum soil temperature for the month (degrees F)(cover: bare muck
+LN8290,Lowest minimum soil temperature for the month (degrees F)(cover: bare muck
+LN8293,Lowest minimum soil temperature for the month (degrees F)(cover: bare muck
+LN8390,Lowest minimum soil temperature for the month (degrees F)(cover: bare muck
+LN8393,Lowest minimum soil temperature for the month (degrees F)(cover: bare muck
+LO01A0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO01P0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO01P1,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO01P2,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO02A0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO02P0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO02P1,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO02P2,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO03A0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO03P0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO03P1,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO03P2,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO04A0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO04P0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO04P1,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO04P2,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO05A0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO05P0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO05P1,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO05P2,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO07P0,Lowest soil temperature at observation time (degrees F)(cover: unknown
+LO11A0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO11P0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO12A0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO12P0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO13A0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO13P0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO14A0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO14A1,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO14P0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO15A0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO15A1,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO15P0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO16A0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO16P0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO17A0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO17P0,Lowest soil temperature at observation time (degrees F)(cover: grass
+LO21A0,Lowest soil temperature at observation time (degrees F)(cover: fallow
+LO22A0,Lowest soil temperature at observation time (degrees F)(cover: fallow
+LO23A0,Lowest soil temperature at observation time (degrees F)(cover: fallow
+LO24A0,Lowest soil temperature at observation time (degrees F)(cover: fallow
+LO25A0,Lowest soil temperature at observation time (degrees F)(cover: fallow
+LO31A0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO31P0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO32A0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO32P0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO33A0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO33P0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO34A0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO34A2,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO34P0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO35A0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO35A2,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO35P0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO36A0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO36P0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO37A0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO37P0,Lowest soil temperature at observation time (degrees F)(cover: bare ground
+LO51A0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO51P0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO52A0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO52P0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO53A0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO53P0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO54A0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO54P0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO55A0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO55P0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO56A0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO56P0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO57A0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO57P0,Lowest soil temperature at observation time (degrees F)(cover: sod
+LO84A0,Lowest soil temperature at observation time (degrees F)(cover: bare muck
+LO84A3,Lowest soil temperature at observation time (degrees F)(cover: bare muck
+LO85A0,Lowest soil temperature at observation time (degrees F)(cover: bare muck
+LO85A3,Lowest soil temperature at observation time (degrees F)(cover: bare muck
+LTMN,Lowest minimum temperature
+LTMX,Lowest maximum temperature
+LX0190,Lowest maximum soil temperature for the month (degrees F)(cover: unknown
+LX0290,Lowest maximum soil temperature for the month (degrees F)(cover: unknown
+LX0299,Lowest maximum soil temperature for the month (degrees F)(cover: unknown
+LX0390,Lowest maximum soil temperature for the month (degrees F)(cover: unknown
+LX1190,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1191,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1290,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1291,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1299,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1390,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1391,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1399,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1490,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1499,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1599,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX1799,Lowest maximum soil temperature for the month (degrees F)(cover: grass
+LX2190,Lowest maximum soil temperature for the month (degrees F)(cover: fallow
+LX2192,Lowest maximum soil temperature for the month (degrees F)(cover: fallow
+LX2290,Lowest maximum soil temperature for the month (degrees F)(cover: fallow
+LX2292,Lowest maximum soil temperature for the month (degrees F)(cover: fallow
+LX2390,Lowest maximum soil temperature for the month (degrees F)(cover: fallow
+LX2392,Lowest maximum soil temperature for the month (degrees F)(cover: fallow
+LX3190,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3192,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3199,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3290,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3292,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3299,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3390,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3392,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3399,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3490,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3499,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3590,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3599,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX3699,Lowest maximum soil temperature for the month (degrees F)(cover: bare ground
+LX5190,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5199,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5290,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5291,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5299,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5390,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5399,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5490,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5499,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5590,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5599,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX5699,Lowest maximum soil temperature for the month (degrees F)(cover: sod
+LX6190,Lowest maximum soil temperature for the month (degrees F)(cover: straw mulch
+LX7290,Lowest maximum soil temperature for the month (degrees F)(cover: grass muck
+LX7293,Lowest maximum soil temperature for the month (degrees F)(cover: grass muck
+LX8190,Lowest maximum soil temperature for the month (degrees F)(cover: bare muck
+LX8193,Lowest maximum soil temperature for the month (degrees F)(cover: bare muck
+LX8290,Lowest maximum soil temperature for the month (degrees F)(cover: bare muck
+LX8293,Lowest maximum soil temperature for the month (degrees F)(cover: bare muck
+LX8390,Lowest maximum soil temperature for the month (degrees F)(cover: bare muck
+LX8393,Lowest maximum soil temperature for the month (degrees F)(cover: bare muck
+MAM-CLDD-BASE45,Long-term averages of spring cooling degree days with base 45F
+MAM-CLDD-BASE50,Long-term averages of spring cooling degree days with base 50F
+MAM-CLDD-BASE55,Long-term averages of spring cooling degree days with base 55F
+MAM-CLDD-BASE57,Long-term averages of spring cooling degree days with base 57F
+MAM-CLDD-BASE60,Long-term averages of spring cooling degree days with base 60F
+MAM-CLDD-BASE70,Long-term averages of spring cooling degree days with base 70F
+MAM-CLDD-BASE72,Long-term averages of spring cooling degree days with base 72F
+MAM-CLDD-NORMAL,Long-term averages of spring cooling degree days with base 65F
+MAM-DUTR-NORMAL,Long-term averages of spring diurnal temperature range
+MAM-GRDD-BASE40,Long-term averages of spring growing degree days with base 40F
+MAM-GRDD-BASE45,Long-term averages of spring growing degree days with base 45F
+MAM-GRDD-BASE50,Long-term averages of spring growing degree days with base 50F
+MAM-GRDD-BASE55,Long-term averages of spring growing degree days with base 55F
+MAM-GRDD-BASE57,Long-term averages of spring growing degree days with base 57F
+MAM-GRDD-BASE60,Long-term averages of spring growing degree days with base 60F
+MAM-GRDD-BASE65,Long-term averages of spring growing degree days with base 65F
+MAM-GRDD-BASE70,Long-term averages of spring growing degree days with base 70F
+MAM-GRDD-BASE72,Long-term averages of spring growing degree days with base 72F
+MAM-GRDD-TB4886,Long-term averages of summer growing degree days with truncated bases 48F and 86F
+MAM-GRDD-TB5086,Long-term averages of summer growing degree days with truncated bases 50F and 86F
+MAM-HTDD-BASE40,Long-term averages of spring heating degree days with base 40F
+MAM-HTDD-BASE45,Long-term averages of spring heating degree days with base 45F
+MAM-HTDD-BASE50,Long-term averages of spring heating degree days with base 50F
+MAM-HTDD-BASE55,Long-term averages of spring heating degree days with base 55F
+MAM-HTDD-BASE57,Long-term averages of spring heating degree days with base 57F
+MAM-HTDD-BASE60,Long-term averages of spring heating degree days with base 60F
+MAM-HTDD-NORMAL,Long-term averages of spring heating degree days with base 65F
+MAM-PRCP-AVGNDS-GE001HI,Long-term averages of number of days during March-May with precipitation >= 0.01 inches
+MAM-PRCP-AVGNDS-GE010HI,Long-term averages of number of days during March-May with precipitation >= a 0.10 inches
+MAM-PRCP-AVGNDS-GE050HI,Long-term averages of number of days during March-May with precipitation >= 0.50 inches
+MAM-PRCP-AVGNDS-GE100HI,Long-term averages of number of days during March-May with precipitation >= 1.00 inches
+MAM-PRCP-NORMAL,Long-term averages of seasonal precipitation totals for March-May
+MAM-SNOW-AVGNDS-GE001TI,Long-term averages of number of days during March-May with snowfall >= 0.1 inches
+MAM-SNOW-AVGNDS-GE010TI,Long-term averages of number of days during March-May with snowfall >= 1.0 inches
+MAM-SNOW-AVGNDS-GE030TI,Long-term averages of number of days during March-May with snowfall >= 3.0 inches
+MAM-SNOW-AVGNDS-GE050TI,Long-term averages of number of days during March-May with snowfall >= 5.0 inches
+MAM-SNOW-AVGNDS-GE100TI,Long-term averages of number of days during March-May with snowfall >= 10.0 inches
+MAM-SNOW-NORMAL,Long-term averages of seasonal snowfall totals for March-May
+MAM-SNWD-AVGNDS-GE001WI,Long-term averages of number of days during March-May with snow depth >= 1 inch
+MAM-SNWD-AVGNDS-GE003WI,Long-term averages of number of days during March-May with snow depth >= 3 inches
+MAM-SNWD-AVGNDS-GE005WI,Long-term averages of number of days during March-May with snow depth >= 5 inches
+MAM-SNWD-AVGNDS-GE010WI,Long-term averages of number of days during March-May with snow depth >= 10 inches
+MAM-TAVG-NORMAL,Long-term averages of spring average temperature
+MAM-TMAX-AVGNDS-GRTH040,Long-term average number of days per spring where tmax is greater than or equal to 40F
+MAM-TMAX-AVGNDS-GRTH050,Long-term average number of days per spring where tmax is greater than or equal to 50F
+MAM-TMAX-AVGNDS-GRTH060,Long-term average number of days per spring where tmax is greater than or equal to 60F
+MAM-TMAX-AVGNDS-GRTH070,Long-term average number of days per spring where tmax is greater than or equal to 70F
+MAM-TMAX-AVGNDS-GRTH080,Long-term average number of days per spring where tmax is greater than or equal to 80F
+MAM-TMAX-AVGNDS-GRTH090,Long-term average number of days per spring where tmax is greater than or equal to 90F
+MAM-TMAX-AVGNDS-GRTH100,Long-term average number of days per spring where tmax is greater than or equal to 100F
+MAM-TMAX-AVGNDS-LSTH032,Long-term average number of days per spring where tmax is less than or equal to 32F
+MAM-TMAX-NORMAL,Long-term averages of spring maximum temperature
+MAM-TMIN-AVGNDS-LSTH000,Long-term average number of days per spring where tmin is less than or equal to 0F
+MAM-TMIN-AVGNDS-LSTH010,Long-term average number of days per spring where tmin is less than or equal to 10F
+MAM-TMIN-AVGNDS-LSTH020,Long-term average number of days per spring where tmin is less than or equal to 20F
+MAM-TMIN-AVGNDS-LSTH032,Long-term average number of days per spring where tmin is less than or equal to 32F
+MAM-TMIN-AVGNDS-LSTH040,Long-term average number of days per spring where tmin is less than or equal to 40F
+MAM-TMIN-AVGNDS-LSTH050,Long-term average number of days per spring where tmin is less than or equal to 50F
+MAM-TMIN-AVGNDS-LSTH060,Long-term average number of days per spring where tmin is less than or equal to 60F
+MAM-TMIN-AVGNDS-LSTH070,Long-term average number of days per spring where tmin is less than or equal to 70F
+MAM-TMIN-NORMAL,Long-term averages of spring minimum temperature
+MDEV,Multiday evaporation total (tenths of mm; use with DAEV)
+MDPR,"Multiday precipitation total (tenths of mm; use with DAPR and DWPR, if available)"
+MDSF,Multiday snowfall total 
+MDTN,Multiday minimum temperature (tenths of degrees C; use with DATN)
+MDTX,Multiday maximum temperature (tenths of degress C; use with DATX)
+MDWM,Multiday wind movement (km)
+MLY-CLDD-BASE45,Long-term averages of monthly cooling degree days with base 45F
+MLY-CLDD-BASE50,Long-term averages of monthly cooling degree days with base 50F
+MLY-CLDD-BASE55,Long-term averages of monthly cooling degree days with base 55F
+MLY-CLDD-BASE57,Long-term averages of monthly cooling degree days with base 57F
+MLY-CLDD-BASE60,Long-term averages of monthly cooling degree days with base 60F
+MLY-CLDD-BASE70,Long-term averages of monthly cooling degree days with base 70F
+MLY-CLDD-BASE72,Long-term averages of monthly cooling degree days with base 72F
+MLY-CLDD-NORMAL,Long-term averages of monthly cooling degree days with base 65F
+MLY-DUTR-NORMAL,Long-term averages of monthly diurnal temperature range
+MLY-DUTR-STDDEV,Long-term standard deviations of monthly diurnal temperature range
+MLY-GRDD-BASE40,Long-term averages of monthly growing degree days with base 40F
+MLY-GRDD-BASE45,Long-term averages of monthly growing degree days with base 45F
+MLY-GRDD-BASE50,Long-term averages of monthly growing degree days with base 50F
+MLY-GRDD-BASE55,Long-term averages of monthly growing degree days with base 55F
+MLY-GRDD-BASE57,Long-term averages of monthly growing degree days with base 57F
+MLY-GRDD-BASE60,Long-term averages of monthly growing degree days with base 60F
+MLY-GRDD-BASE65,Long-term averages of monthly growing degree days with base 65F
+MLY-GRDD-BASE70,Long-term averages of monthly growing degree days with base 70F
+MLY-GRDD-BASE72,Long-term averages of monthly growing degree days with base 72F
+MLY-GRDD-TB4886,Long-term averages of monthly growing degree days with truncated bases 48F and 86F
+MLY-GRDD-TB5086,Long-term averages of monthly growing degree days with truncated bases 50F and 86F
+MLY-HTDD-BASE40,Long-term averages of monthly heating degree days with base 40F
+MLY-HTDD-BASE45,Long-term averages of monthly heating degree days with base 45F
+MLY-HTDD-BASE50,Long-term averages of monthly heating degree days with base 50F
+MLY-HTDD-BASE55,Long-term averages of monthly heating degree days with base 55F
+MLY-HTDD-BASE57,Long-term averages of monthly heating degree days with base 57F
+MLY-HTDD-BASE60,Long-term averages of monthly heating degree days with base 60F
+MLY-HTDD-NORMAL,Long-term averages of monthly heating degree days with base 65F
+MLY-PRCP-25PCTL,25th percentiles of monthly precipitation totals
+MLY-PRCP-50PCTL,50th percentiles of monthly precipitation totals
+MLY-PRCP-75PCTL,75th percentiles of monthly precipitation totals
+MLY-PRCP-AVGNDS-GE001HI,Long-term averages of number of days per month with precipitation >= 0.01 inches
+MLY-PRCP-AVGNDS-GE010HI,Long-term averages of number of days per month with precipitation >= 0.10 inches
+MLY-PRCP-AVGNDS-GE050HI,Long-term averages of number of days per month with precipitation >= 0.50 inches
+MLY-PRCP-AVGNDS-GE100HI,Long-term averages of number of days per month with precipitation >= 1.00 inches
+MLY-PRCP-NORMAL,Long-term averages of monthly precipitation totals
+MLY-SNOW-25PCTL,25th percentiles of monthly snowfall totals
+MLY-SNOW-50PCTL,50th percentiles of monthly snowfall totals
+MLY-SNOW-75PCTL,75th percentiles of monthly snowfall totals
+MLY-SNOW-AVGNDS-GE001TI,Long-term averages of number of days per month with Snowfall >= 0.1 inches
+MLY-SNOW-AVGNDS-GE010TI,Long-term averages of number of days per month with Snowfall >= 1.0 inches
+MLY-SNOW-AVGNDS-GE030TI,Long-term averages of number of days per month with Snowfall >= 3.0 inches
+MLY-SNOW-AVGNDS-GE050TI,Long-term averages of number of days per month with Snowfall >= 5.0 inches
+MLY-SNOW-AVGNDS-GE100TI,Long-term averages of number of days per month with Snowfall >= 10.0 inches
+MLY-SNOW-NORMAL,Long-term averages of monthly snowfall totals
+MLY-SNWD-AVGNDS-GE001WI,Long-term averages of number of days per month with snow depth >= 1 inch
+MLY-SNWD-AVGNDS-GE003WI,Long-term averages of number of days per month with snow depth >= 3 inches
+MLY-SNWD-AVGNDS-GE005WI,Long-term averages of number of days per month with snow depth >= 5 inches
+MLY-SNWD-AVGNDS-GE010WI,Long-term averages of number of days per month with snow depth >= 10 inches
+MLY-TAVG-NORMAL,Long-term averages of monthly average temperature
+MLY-TAVG-STDDEV,Long-term standard deviations of monthly average temperature
+MLY-TMAX-AVGNDS-GRTH040,Long-term average number of days per month where tmax is greater than or equal to 40F
+MLY-TMAX-AVGNDS-GRTH050,Long-term average number of days per month where tmax is greater than or equal to 50F
+MLY-TMAX-AVGNDS-GRTH060,Long-term average number of days per month where tmax is greater than or equal to 60F
+MLY-TMAX-AVGNDS-GRTH070,Long-term average number of days per month where tmax is greater than or equal to 70F
+MLY-TMAX-AVGNDS-GRTH080,Long-term average number of days per month where tmax is greater than or equal to 80F
+MLY-TMAX-AVGNDS-GRTH090,Long-term average number of days per month where tmax is greater than or equal to 90F
+MLY-TMAX-AVGNDS-GRTH100,Long-term average number of days per month where tmax is greater than or equal to 100F
+MLY-TMAX-AVGNDS-LSTH032,Long-term average number of days per month where tmax is less than or equal to 32F
+MLY-TMAX-NORMAL,Long-term averages of monthly maximum temperature
+MLY-TMAX-STDDEV,Long-term standard deviations of monthly maximum temperature
+MLY-TMIN-AVGNDS-LSTH000,Long-term average number of days per month where tmin is less than or equal to 0F
+MLY-TMIN-AVGNDS-LSTH010,Long-term average number of days per month where tmin is less than or equal to 10F
+MLY-TMIN-AVGNDS-LSTH020,Long-term average number of days per month where tmin is less than or equal to 20F
+MLY-TMIN-AVGNDS-LSTH032,Long-term average number of days per month where tmin is less than or equal to 32F
+MLY-TMIN-AVGNDS-LSTH040,Long-term average number of days per month where tmin is less than or equal to 40F
+MLY-TMIN-AVGNDS-LSTH050,Long-term average number of days per month where tmin is less than or equal to 50F
+MLY-TMIN-AVGNDS-LSTH060,Long-term average number of days per month where tmin is less than or equal to 60F
+MLY-TMIN-AVGNDS-LSTH070,Long-term average number of days per month where tmin is less than or equal to 70F
+MLY-TMIN-NORMAL,Long-term averages of monthly minimum temperature
+MLY-TMIN-PRBOCC-LSTH016,probability of 16F or below at least once in the month
+MLY-TMIN-PRBOCC-LSTH020,probability of 20F or below at least once in the month
+MLY-TMIN-PRBOCC-LSTH024,probability of 24F or below at least once in the month
+MLY-TMIN-PRBOCC-LSTH028,probability of 28F or below at least once in the month
+MLY-TMIN-PRBOCC-LSTH032,probability of 32F or below at least once in the month
+MLY-TMIN-PRBOCC-LSTH036,probability of 36F or below at least once in the month
+MLY-TMIN-STDDEV,Long-term standard deviations of monthly minimum temperature
+MMNP,Monthly mean minimum temperature of evaporation pan water.
+MMNT,Monthly Mean minimum temperature
+MMXP,Monthly mean maximum temperature of evaporation pan water.
+MMXT,Monthly Mean maximum temperature
+MN0190,Monthly mean minimum soil temperature (degrees F)(cover: unknown
+MN0290,Monthly mean minimum soil temperature (degrees F)(cover: unknown
+MN0299,Monthly mean minimum soil temperature (degrees F)(cover: unknown
+MN0390,Monthly mean minimum soil temperature (degrees F)(cover: unknown
+MN1190,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1191,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1290,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1291,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1299,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1390,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1391,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1399,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1490,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN1499,Monthly mean minimum soil temperature (degrees F)(cover: grass
+MN2190,Monthly mean minimum soil temperature (degrees F)(cover: fallow
+MN2192,Monthly mean minimum soil temperature (degrees F)(cover: fallow
+MN2290,Monthly mean minimum soil temperature (degrees F)(cover: fallow
+MN2292,Monthly mean minimum soil temperature (degrees F)(cover: fallow
+MN2390,Monthly mean minimum soil temperature (degrees F)(cover: fallow
+MN2392,Monthly mean minimum soil temperature (degrees F)(cover: fallow
+MN3190,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3192,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3199,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3290,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3292,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3299,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3390,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3392,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3399,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3490,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3499,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3590,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3599,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3690,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN3699,Monthly mean minimum soil temperature (degrees F)(cover: bare ground
+MN5190,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5199,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5290,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5291,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5299,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5390,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5399,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5490,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5499,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5590,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5599,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN5699,Monthly mean minimum soil temperature (degrees F)(cover: sod
+MN6190,Monthly mean minimum soil temperature (degrees F)(cover: straw mulch
+MN7290,Monthly mean minimum soil temperature (degrees F)(cover: grass muck
+MN7293,Monthly mean minimum soil temperature (degrees F)(cover: grass muck
+MN8190,Monthly mean minimum soil temperature (degrees F)(cover: bare muck
+MN8193,Monthly mean minimum soil temperature (degrees F)(cover: bare muck
+MN8290,Monthly mean minimum soil temperature (degrees F)(cover: bare muck
+MN8293,Monthly mean minimum soil temperature (degrees F)(cover: bare muck
+MN8390,Monthly mean minimum soil temperature (degrees F)(cover: bare muck
+MN8393,Monthly mean minimum soil temperature (degrees F)(cover: bare muck
+MNPN,Daily minimum temperature of water in an evaporation pan (tenths of degrees C)
+MNTM,Monthly mean temperature
+MO01A0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO01P0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO01P1,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO01P2,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO02A0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO02P0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO02P1,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO03A0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO03P0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO03P1,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO03P2,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO04A0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO04P0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO04P1,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO04P2,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO05A0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO05P0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO05P1,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO05P2,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO07P0,Monthly mean soil temperature at observation time (degrees F)(cover: unknown
+MO11A0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO11P0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO12A0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO12P0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO13A0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO13P0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO14A0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO14A1,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO14P0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO15A0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO15A1,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO15P0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO16A0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO16P0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO17A0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO17P0,Monthly mean soil temperature at observation time (degrees F)(cover: grass
+MO21A0,Monthly mean soil temperature at observation time (degrees F)(cover: fallow
+MO22A0,Monthly mean soil temperature at observation time (degrees F)(cover: fallow
+MO23A0,Monthly mean soil temperature at observation time (degrees F)(cover: fallow
+MO24A0,Monthly mean soil temperature at observation time (degrees F)(cover: fallow
+MO25A0,Monthly mean soil temperature at observation time (degrees F)(cover: fallow
+MO31A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO31P0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO32A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO32P0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO33A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO33P0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO34A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO34A2,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO34P0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO35A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO35A2,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO35P0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO36A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO36P0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO37A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO37P0,Monthly mean soil temperature at observation time (degrees F)(cover: bare ground
+MO51A0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO51P0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO52A0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO52P0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO53A0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO53P0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO54A0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO54P0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO55A0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO55P0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO56A0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO56P0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO57A0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO57P0,Monthly mean soil temperature at observation time (degrees F)(cover: sod
+MO84A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare muck
+MO84A3,Monthly mean soil temperature at observation time (degrees F)(cover: bare muck
+MO85A0,Monthly mean soil temperature at observation time (degrees F)(cover: bare muck
+MO85A3,Monthly mean soil temperature at observation time (degrees F)(cover: bare muck
+MTD-PRCP-NORMAL,Long-term average month-to-date precipitation totals
+MTD-SNOW-NORMAL,Long-term average month-to-date snowfall totals
+MX0190,Monthly mean maximum soil temperature (degrees F)(cover: unknown
+MX0290,Monthly mean maximum soil temperature (degrees F)(cover: unknown
+MX0299,Monthly mean maximum soil temperature (degrees F)(cover: unknown
+MX0390,Monthly mean maximum soil temperature (degrees F)(cover: unknown
+MX1190,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1191,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1290,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1291,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1299,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1390,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1391,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1399,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1490,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1499,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1599,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX1799,Monthly mean maximum soil temperature (degrees F)(cover: grass
+MX2190,Monthly mean maximum soil temperature (degrees F)(cover: fallow
+MX2192,Monthly mean maximum soil temperature (degrees F)(cover: fallow
+MX2290,Monthly mean maximum soil temperature (degrees F)(cover: fallow
+MX2292,Monthly mean maximum soil temperature (degrees F)(cover: fallow
+MX2390,Monthly mean maximum soil temperature (degrees F)(cover: fallow
+MX2392,Monthly mean maximum soil temperature (degrees F)(cover: fallow
+MX3190,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3192,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3199,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3290,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3292,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3299,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3390,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3392,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3399,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3490,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3499,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3590,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3599,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX3699,Monthly mean maximum soil temperature (degrees F)(cover: bare ground
+MX5190,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5199,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5290,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5291,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5299,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5390,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5399,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5490,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5499,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5590,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5599,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX5699,Monthly mean maximum soil temperature (degrees F)(cover: sod
+MX6190,Monthly mean maximum soil temperature (degrees F)(cover: straw mulch
+MX7290,Monthly mean maximum soil temperature (degrees F)(cover: grass muck
+MX7293,Monthly mean maximum soil temperature (degrees F)(cover: grass muck
+MX8190,Monthly mean maximum soil temperature (degrees F)(cover: bare muck
+MX8193,Monthly mean maximum soil temperature (degrees F)(cover: bare muck
+MX8290,Monthly mean maximum soil temperature (degrees F)(cover: bare muck
+MX8293,Monthly mean maximum soil temperature (degrees F)(cover: bare muck
+MX8390,Monthly mean maximum soil temperature (degrees F)(cover: bare muck
+MX8393,Monthly mean maximum soil temperature (degrees F)(cover: bare muck
+MXPN,Daily maximum temperature of water in an evaporation pan (tenths of degrees C)
+MXSD,Maximum snow depth
+N0C,Correlation Coefficient (approx. elev. angle: 0.5 deg)
+N0H,Hydrometeor Classification (approx. elev.: 0.5 deg)
+N0K,Specific Differential Phase (approx. elev.: 0.5 deg)
+N0Q,Digital Base Reflectivity (approx. elev. angle: 0.5 deg)
+N0R,Base Reflectivity (approx. elev. angle: 0.5 deg)
+N0S,Storm Relative Velocity (approx. elev. angle: 0.5 deg)
+N0V,Base Velocity (approx. elev. angle: 0.5 deg)
+N0W,Base Velocity
+N0X,Differential Reflectivity (approx. elev. angle: 0.5 deg)
+N0Z,Long Range Base Reflectivity (460 km.
+N1C,Correlation Coefficient (approx. elev. angle: 1.5 deg)
+N1H,Hydrometeor Classification (approx. elev.: 1.5 deg)
+N1K,Specific Differential Phase (approx. elev.: 1.5 deg)
+N1P,One Hour Precipitation Total
+N1Q,Digital Base Reflectivity (approx. elev. angle: 1.5 deg)
+N1R,Base Reflectivity (approx. elev. angle: 1.5 deg)
+N1S,Storm Relative Velocity (approx. elev. angle: 1.5 deg)
+N1V,Base Velocity (approx. elev. angle: 1.5 deg)
+N1X,Differential Reflectivity (approx. elev. angle: 1.5 deg)
+N2C,Correlation Coefficient (approx. elev. angle: 2.4 deg)
+N2H,Hydrometeor Classification (approx. elev.: 2.4 deg)
+N2K,Specific Differential Phase (approx. elev.: 2.4 deg)
+N2Q,Digital Base Reflectivity (approx. elev. angle: 2.4 deg)
+N2R,Base Reflectivity (approx. elev. angle: 2.4 deg)
+N2S,Storm Relative Velocity (approx. elev. angle: 2.4 deg)
+N2V,Base Velocity (approx. elev. angle: 2.4 deg)
+N2X,Differential Reflectivity (approx. elev. angle: 2.4 deg)
+N3C,Correlation Coefficient (approx. elev. angle: 3.4 deg)
+N3H,Hydrometeor Classification (approx. elev.: 3.4 deg)
+N3K,Specific Differential Phase (approx. elev.: 3.4 deg)
+N3P,Three Hour Precipitation Total
+N3Q,Digital Base Reflectivity (approx. elev. angle: 3.4 deg)
+N3R,Base Reflectivity (approx. elev. angle: 3.4 deg)
+N3S,Storm Relative Velocity (approx. elev. angle: 3.4 deg)
+N3V,Base Velocity (approx. elev. angle: 3.4 deg)
+N3X,Differential Reflectivity (approx. elev. angle: 3.4 deg)
+NAC,Correlation Coefficient (approx. elev. angle: 0.8 deg)
+NAH,Hydrometeor Classification (approx. elev.: 0.8 deg)
+NAK,Specific Differential Phase (approx. elev.: 0.8 deg)
+NAQ,Digital Base Reflectivity (approx. elev. angle: 0.8 deg)
+NAX,Differential Reflectivity (approx. elev. angle: 0.9 deg)
+NBC,Correlation Coefficient (approx. elev. angle: 1.8 deg)
+NBH,Hydrometeor Classification (approx. elev.: 1.8 deg)
+NBK,Specific Differential Phase (approx. elev.: 1.8 deg)
+NBQ,Digital Base Reflectivity (approx. elev. angle: 1.8 deg)
+NBX,Differential Reflectivity (approx. elev. angle: 1.8 deg)
+NCR,Composite Reflectivity (4x4 km. grid
+NCZ,Composite Reflectivity (2x2 km. grid
+NET,Echo Tops
+NHI,Hail Index
+NHL,High Layer Composite Reflectivity
+NLL,Low Layer Composite Reflectivity
+NMD,Digital Mesocyclone Detection Algorithm
+NME,Mesocyclone
+NML,Mid Layer Composite Reflectivity
+NSP,Base Spectrum Width (60 km. range)
+NSS,Storm Structure
+NST,Storm Tracking Information
+NSW,Base Spectrum Width (230 km. range)
+NTP,Storm Total Precipitation
+NTV,Tornadic Vortex Signature
+NVL,Vertical Integrated Liquid
+OHA,One Hour Accumulation(One Hour Precipitation total (16 levels) with Dual Pol. algorithm)
+PGTM,"Peak gust time (hours and minutes, i.e., HHMM)"
+PRCP,Precipitation (tenths of mm)
+PSUN,Daily percent of possible sunshine (percent)
+PTA,Storm Total Accumulation(Storm Total Precipitation total (16 levels) with Dual Pol. algorithm)
+QGAG,Precipitation (10th or 100th of an inch)
+QPCP,Precipitation (10th or 100th of an inch)
+RCM,Radar Coded Message
+RSL,WSR-88D Radar Status Log
+SN01,Minimum soil temperature (tenths of degrees C) with unknown cover at 5 cm depth
+SN02,Minimum soil temperature (tenths of degrees C) with unknown cover at 10 cm depth
+SN03,Minimum soil temperature (tenths of degrees C) with unknown cover at 20 cm depth
+SN11,Minimum soil temperature (tenths of degrees C) with grass cover at 5 cm depth
+SN12,Minimum soil temperature (tenths of degrees C) with grass cover at 10 cm depth
+SN13,Minimum soil temperature (tenths of degrees C) with grass cover at 20 cm depth
+SN14,Minimum soil temperature (tenths of degrees C) with grass cover at 50 cm depth
+SN21,Minimum soil temperature (tenths of degrees C) with fallow cover at 5 cm depth
+SN22,Minimum soil temperature (tenths of degrees C) with fallow cover at 10 cm depth
+SN23,Minimum soil temperature (tenths of degrees C) with fallow cover at 20 cm depth
+SN31,Minimum soil temperature (tenths of degrees C) with bare ground cover at 5 cm depth
+SN32,Minimum soil temperature (tenths of degrees C) with bare ground cover at 10 cm depth
+SN33,Minimum soil temperature (tenths of degrees C) with bare ground cover at 20 cm depth
+SN34,Minimum soil temperature (tenths of degrees C) with bare ground cover at 50 cm depth
+SN35,Minimum soil temperature (tenths of degrees C) with bare ground cover at 100 cm depth
+SN36,Minimum soil temperature (tenths of degrees C) with bare ground cover at 150 cm depth
+SN51,Minimum soil temperature (tenths of degrees C) with sod cover at 5 cm depth
+SN52,Minimum soil temperature (tenths of degrees C) with sod cover at 10 cm depth
+SN53,Minimum soil temperature (tenths of degrees C) with sod cover at 20 cm depth
+SN54,Minimum soil temperature (tenths of degrees C) with sod cover at 50 cm depth
+SN55,Minimum soil temperature (tenths of degrees C) with sod cover at 100 cm depth
+SN56,Minimum soil temperature (tenths of degrees C) with sod cover at 150 cm depth
+SN57,Minimum soil temperature (tenths of degrees C) with sod cover at 180 cm depth
+SN61,Minimum soil temperature (tenths of degrees C) with straw multch cover at 5 cm depth
+SN72,Minimum soil temperature (tenths of degrees C) with grass muck cover at 10 cm depth
+SN81,Minimum soil temperature (tenths of degrees C) with bare muck cover at 5 cm depth
+SN82,Minimum soil temperature (tenths of degrees C) with bare muck cover at 10 cm depth
+SN83,Minimum soil temperature (tenths of degrees C) with bare muck cover at 20 cm depth
+SNOW,Snowfall (mm)
+SNWD,Snow depth (mm)
+SON-CLDD-BASE45,Long-term averages of autumn cooling degree days with base 45F
+SON-CLDD-BASE50,Long-term averages of autumn cooling degree days with base 50F
+SON-CLDD-BASE55,Long-term averages of autumn cooling degree days with base 55F
+SON-CLDD-BASE57,Long-term averages of autumn cooling degree days with base 57F
+SON-CLDD-BASE60,Long-term averages of autumn cooling degree days with base 60F
+SON-CLDD-BASE70,Long-term averages of autumn cooling degree days with base 70F
+SON-CLDD-BASE72,Long-term averages of autumn cooling degree days with base 72F
+SON-CLDD-NORMAL,Long-term averages of autumn cooling degree days with base 65F
+SON-DUTR-NORMAL,Long-term averages of autumn diurnal temperature range
+SON-GRDD-BASE40,Long-term averages of fall growing degree days with base 40F
+SON-GRDD-BASE45,Long-term averages of fall growing degree days with base 45F
+SON-GRDD-BASE50,Long-term averages of fall growing degree days with base 50F
+SON-GRDD-BASE55,Long-term averages of fall growing degree days with base 55F
+SON-GRDD-BASE57,Long-term averages of fall growing degree days with base 57F
+SON-GRDD-BASE60,Long-term averages of fall growing degree days with base 60F
+SON-GRDD-BASE65,Long-term averages of fall growing degree days with base 65F
+SON-GRDD-BASE70,Long-term averages of fall growing degree days with base 70F
+SON-GRDD-BASE72,Long-term averages of fall growing degree days with base 72F
+SON-GRDD-TB4886,Long-term averages of summer growing degree days with truncated bases 48F and 86F
+SON-GRDD-TB5086,Long-term averages of summer growing degree days with truncated bases 50F and 86F
+SON-HTDD-BASE40,Long-term averages of autumn heating degree days with base 40F
+SON-HTDD-BASE45,Long-term averages of autumn heating degree days with base 45F
+SON-HTDD-BASE50,Long-term averages of autumn heating degree days with base 50F
+SON-HTDD-BASE55,Long-term averages of autumn heating degree days with base 55F
+SON-HTDD-BASE57,Long-term averages of autumn heating degree days with base 57F
+SON-HTDD-BASE60,Long-term averages of autumn heating degree days with base 60F
+SON-HTDD-NORMAL,Long-term averages of autumn heating degree days with base 65F
+SON-PRCP-AVGNDS-GE001HI,Long-term averages of number of days during September-November with precipitation >= 0.01 inches
+SON-PRCP-AVGNDS-GE010HI,Long-term averages of number of days during September-November with precipitation >= 0.10 inches
+SON-PRCP-AVGNDS-GE050HI,Long-term averages of number of days during September-November with precipitation >= 0.50 inches
+SON-PRCP-AVGNDS-GE100HI,Long-term averages of number of days during September-November with precipitation >= 1.00 inches
+SON-PRCP-NORMAL,Long-term averages of seasonal precipitation totals for September-November
+SON-SNOW-AVGNDS-GE001TI,Long-term averages of number of days during September-November with snowfall >= 0.1 inches
+SON-SNOW-AVGNDS-GE010TI,Long-term averages of number of days during September-November with snowfall >= 1.0 inches
+SON-SNOW-AVGNDS-GE030TI,Long-term averages of number of days during September-November with snowfall >= 3.0 inches
+SON-SNOW-AVGNDS-GE050TI,Long-term averages of number of days during September-November with snowfall >= 5.0 inches
+SON-SNOW-AVGNDS-GE100TI,Long-term averages of number of days during September-November with snowfall >= 10.0 inches
+SON-SNOW-NORMAL,Long-term averages of seasonal snowfall totals for September-November
+SON-SNWD-AVGNDS-GE001WI,Long-term averages of number of days during September-November with snow depth >= 1 inch
+SON-SNWD-AVGNDS-GE003WI,Long-term averages of number of days during September-November with snow depth >= 3 inches
+SON-SNWD-AVGNDS-GE005WI,Long-term averages of number of days during September-November with snow depth >= 5 inches
+SON-SNWD-AVGNDS-GE010WI,Long-term averages of number of days during September-November with snow depth >= 10 inches
+SON-TAVG-NORMAL,Long-term averages of autumn average temperature
+SON-TMAX-AVGNDS-GRTH040,Long-term average number of days per autumn where tmax is greater than or equal to 40F
+SON-TMAX-AVGNDS-GRTH050,Long-term average number of days per autumn where tmax is greater than or equal to 50F
+SON-TMAX-AVGNDS-GRTH060,Long-term average number of days per autumn where tmax is greater than or equal to 60F
+SON-TMAX-AVGNDS-GRTH070,Long-term average number of days per autumn where tmax is greater than or equal to 70F
+SON-TMAX-AVGNDS-GRTH080,Long-term average number of days per autumn where tmax is greater than or equal to 80F
+SON-TMAX-AVGNDS-GRTH090,Long-term average number of days per autumn where tmax is greater than or equal to 90F
+SON-TMAX-AVGNDS-GRTH100,Long-term average number of days per autumn where tmax is greater than or equal to 100F
+SON-TMAX-AVGNDS-LSTH032,Long-term average number of days per autumn where tmax is less than or equal to 32F
+SON-TMAX-NORMAL,Long-term averages of autumn maximum temperature
+SON-TMIN-AVGNDS-LSTH000,Long-term average number of days per autumn where tmin is less than or equal to 0F
+SON-TMIN-AVGNDS-LSTH010,Long-term average number of days per autumn where tmin is less than or equal to 10F
+SON-TMIN-AVGNDS-LSTH020,Long-term average number of days per autumn where tmin is less than or equal to 20F
+SON-TMIN-AVGNDS-LSTH032,Long-term average number of days per autumn where tmin is less than or equal to 32F
+SON-TMIN-AVGNDS-LSTH040,Long-term average number of days per autumn where tmin is less than or equal to 40F
+SON-TMIN-AVGNDS-LSTH050,Long-term average number of days per autumn where tmin is less than or equal to 50F
+SON-TMIN-AVGNDS-LSTH060,Long-term average number of days per autumn where tmin is less than or equal to 60F
+SON-TMIN-AVGNDS-LSTH070,Long-term average number of days per autumn where tmin is less than or equal to 70F
+SON-TMIN-NORMAL,Long-term averages of autumn minimum temperature
+SPD,Supplemental Precipitation Data
+SX01,Maximum soil temperature (tenths of degrees C) with unknown cover at 5 cm depth
+SX02,Maximum soil temperature (tenths of degrees C) with unknown cover at 10 cm depth
+SX03,Maximum soil temperature (tenths of degrees C) with unknown cover at 20 cm depth
+SX11,Maximum soil temperature (tenths of degrees C) with grass cover at 5 cm depth
+SX12,Maximum soil temperature (tenths of degrees C) with grass cover at 10 cm depth
+SX13,Maximum soil temperature (tenths of degrees C) with grass cover at 20 cm depth
+SX14,Maximum soil temperature (tenths of degrees C) with grass cover at 50 cm depth
+SX15,Maximum soil temperature (tenths of degrees C) with grass cover at 100 cm depth
+SX17,Maximum soil temperature (tenths of degrees C) with grass cover at 180 cm depth
+SX21,Maximum soil temperature (tenths of degrees C) with fallow cover at 5 cm depth
+SX22,Maximum soil temperature (tenths of degrees C) with fallow cover at 10 cm depth
+SX23,Maximum soil temperature (tenths of degrees C) with fallow cover at 20 cm depth
+SX31,Maximum soil temperature (tenths of degrees C) with bare ground cover at 5 cm depth
+SX32,Maximum soil temperature (tenths of degrees C) with bare ground cover at 10 cm depth
+SX33,Maximum soil temperature (tenths of degrees C) with bare ground cover at 20 cm depth
+SX34,Maximum soil temperature (tenths of degrees C) with bare ground cover at 50 cm depth
+SX35,Maximum soil temperature (tenths of degrees C) with bare ground cover at 100 cm depth
+SX36,Maximum soil temperature (tenths of degrees C) with bare ground cover at 150 cm depth
+SX51,Maximum soil temperature (tenths of degrees C) with sod cover at 5 cm depth
+SX52,Maximum soil temperature (tenths of degrees C) with sod cover at 10 cm depth
+SX53,Maximum soil temperature (tenths of degrees C) with sod cover at 20 cm depth
+SX54,Maximum soil temperature (tenths of degrees C) with sod cover at 50 cm depth
+SX55,Maximum soil temperature (tenths of degrees C) with sod cover at 100 cm depth
+SX56,Maximum soil temperature (tenths of degrees C) with sod cover at 150 cm depth
+SX57,Maximum soil temperature (tenths of degrees C) with sod cover at 180 cm depth
+SX61,Maximum soil temperature (tenths of degrees C) with straw multch cover at 5 cm depth
+SX72,Maximum soil temperature (tenths of degrees C) with grass muck cover at 10 cm depth
+SX81,Maximum soil temperature (tenths of degrees C) with bare muck cover at 5 cm depth
+SX82,Maximum soil temperature (tenths of degrees C) with bare muck cover at 10 cm depth
+SX83,Maximum soil temperature (tenths of degrees C) with bare muck cover at 20 cm depth
+TEVP,Total monthly evaporation.
+THIC,Thickness of ice on water (tenths of mm)
+TMAX,Maximum temperature (tenths of degrees C)
+TMIN,Minimum temperature (tenths of degrees C)
+TOBS,Temperature at the time of observation (tenths of degrees C)
+TPCP,Total precipitation
+TR0,TDWR Base Reflectivity
+TR1,TDWR Base Reflectivity
+TR2,TDWR Base Reflectivity
+TSNW,Total snow fall
+TSUN,Daily total sunshine (minutes)
+TV0,TDWR Base Velocity (first elevation angle)
+TV1,TDWR Base Velocity (second elevation angle)
+TV2,TDWR Base Velocity (third elevation angle)
+TWND,Total monthly wind movement (in miles) over evaporation pan.
+TZL,TDWR Long Range Base Reflectivity (0.6 elev angle)
+WDF1,Direction of fastest 1-minute wind (degrees)
+WDF2,Direction of fastest 2-minute wind (degrees)
+WDF5,Direction of fastest 5-second wind (degrees)
+WDFG,Direction of peak wind gust (degrees)
+WDFI,Direction of highest instantaneous wind (degrees)
+WDFM,Fastest mile wind direction (degrees)
+WDMV,24-hour wind movement (km)
+WESD,Water equivalent of snow on the ground (tenths of mm)
+WESF,Water equivalent of snowfall (tenths of mm)
+WSF1,Fastest 1-minute wind speed (tenths of meters per second)
+WSF2,Fastest 2-minute wind speed (tenths of meters per second)
+WSF5,Fastest 5-second wind speed (tenths of meters per second)
+WSFG,Peak gust wind speed (tenths of meters per second)
+WSFI,Highest instantaneous wind speed (tenths of meters per second)
+WSFM,Fastest mile wind speed (tenths of meters per second)
+WT01,"Fog, ice fog, or freezing fog (may include heavy fog)"
+WT02,Heavy fog or heaving freezing fog (not always distinguished from fog)
+WT03,Thunder
+WT04,"Ice pellets, sleet, snow pellets, or small hail"" "
+WT05,Hail (may include small hail)
+WT06,Glaze or rime 
+WT07,"Dust, volcanic ash, blowing dust, blowing sand, or blowing obstruction"
+WT08,Smoke or haze 
+WT09,Blowing or drifting snow
+WT10,"Tornado, waterspout, or funnel cloud"" "
+WT11,High or damaging winds
+WT12,Blowing spray
+WT13,Mist
+WT14,Drizzle
+WT15,Freezing drizzle 
+WT16,"Rain (may include freezing rain, drizzle, and freezing drizzle)"" "
+WT17,Freezing rain 
+WT18,"Snow, snow pellets, snow grains, or ice crystals"
+WT19,Unknown source of precipitation 
+WT21,Ground fog 
+WT22,Ice fog or freezing fog
+WV01,"Fog, ice fog, or freezing fog (may include heavy fog)"
+WV03,Thunder
+WV07,"Ash, dust, sand, or other blowing obstruction"
+WV18,Snow or ice crystals
+WV20,Rain or snow shower
+YTD-PRCP-NORMAL,Long-term average year-to-date precipitation totals
+YTD-SNOW-NORMAL,Long-term average year-to-date snowfall totals
