@@ -52,8 +52,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'pyncei'
-copyright = u'2016, Author'
-author = u'Author'
+copyright = u'2016, adamancer'
+author = u'adamancer'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -360,3 +360,7 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
+
+# Change default sort order. Options are 'alphabetical', 'groupwise',
+# or 'bysource'.
+autodoc_member_order = 'bysource'
