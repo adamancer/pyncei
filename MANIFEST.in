@@ -1,2 +1,2 @@
 include README.md
-include pyncei/*/files/*.csv
+include pyncei/files/*.csv
