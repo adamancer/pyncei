@@ -1,3 +1,4 @@
+id,name
 ACMC,Average cloudiness midnight to midnight from 30-second ceilometer data (percent)
 ACMH,Average cloudiness midnight to midnight from manual observations (percent)
 ACSC,Average cloudiness sunrise to sunset from 30-second ceilometer data (percent)

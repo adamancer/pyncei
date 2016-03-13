@@ -1,6 +1,6 @@
 """Python bindings for the Climate Data Online webservices provided by NOAA's
 National Centers for Environmental information (formerly the National Center
-for Climate Data)."""
+for Climate Data). Install with :code:`pip install pyncei`."""
 
 import csv
 import glob
@@ -21,14 +21,23 @@ from lxml import etree
 class NCEIReader(object):
     """Contains functions to request data from the NCEI webservices
 
+    Attributes:
+        cache (int): Time in seconds to cache requests. If 0, requests
+            are not cached.
+        endpoints (list): List of available endpoints
+        token (str): NCEI token
+        wait (float): Time in seconds between requests. NCEI
+            allows a maximum of five queries per second.
+
     The get functions described below use a common set of arguments. The
     sortorder, limit, offset, count, and max arguments are always available;
     the others vary by endpoint. Most values appear to be case-sensitive.
-    Query validation should capture most but not all case errors.
+    Query validation done by this class should capture most but not all
+    case errors.
 
     Args:
         dataset (str or list): the id or name of a NCEI dataset. Multiple
-            values allowed in most functions. Examples: GHCND; PRECIP_HLY;
+            values allowed for most functions. Examples: GHCND; PRECIP_HLY;
             Weather Radar (Level III). Corresponds to the datasetid field
             in NCEI data model.
         datacategory (str or list): the id or name of a NCEI data category.
@@ -63,8 +72,7 @@ class NCEIReader(object):
 
         Args:
             token (str): NCEI token
-            wait (float or int): time in seconds between requests. NCEI
-                allows a maximum of five queries per second.
+            wait (float or int):
             cache (int): time in seconds to cache requests. If 0, requests
                 are not cached.
 
@@ -89,7 +97,7 @@ class NCEIReader(object):
         self.s = requests.Session()
         self.s.headers.update({'token': token, 'User-Agent': 'pyncei/0.1'})
 
-        self.validators = {
+        self._validators = {
             'count': bool,
             'datacategory': self._check_name,
             'dataset': self._check_name,
@@ -110,7 +118,7 @@ class NCEIReader(object):
         # List of fields that can occur more than once in a given query.
         # This list may need to be adjusted depending on the endpoint;
         # for example, the data endpoint allows only one dataset to be passed.
-        self.allow_multiple = [
+        self._allow_multiple = [
             'datacategory',
             'dataset',
             'datatype',
@@ -131,19 +139,24 @@ class NCEIReader(object):
 
         # Create name lookups to help users map to ids needed for querying
         self._lookups = {}
-        self.filepath = os.path.join(os.path.dirname(__file__), 'files')
+        self._filepath = os.path.join(os.path.dirname(__file__), 'files')
         try:
-            os.makedirs(self.filepath)
+            os.makedirs(self._filepath)
         except OSError:
-            for fp in glob.iglob(os.path.join(self.filepath, '*.csv')):
+            for fp in glob.iglob(os.path.join(self._filepath, '*.csv')):
                 fn = os.path.splitext(os.path.basename(fp))[0]
                 self._lookups[fn] = {}
                 with open(fp, 'rb') as f:
                     rows = csv.reader(f, delimiter=',', quotechar='"')
-                    for row in rows:
-                        row = tuple(row)
-                        for key in row:
-                            self._lookups[fn][key.lower()] = row
+                    try:
+                        rows.next()
+                    except StopIteration:
+                        pass
+                    else:
+                        for row in rows:
+                            row = tuple(row)
+                            for key in row:
+                                self._lookups[fn][key.lower()] = row
 
         # Constants
         self.EXTENT_CONTINENTAL_US = '24.5000,-125.0000,49.5000,-67.0000'
@@ -152,12 +165,15 @@ class NCEIReader(object):
     def get_data(self, **kwargs):
         """Retrieves historical climate data matching the given parameters
 
-        See the class description for more details about available arguments.
+        See :py:func:`~pyncei.NCEIReader.NCEIReader` for more details about
+        available keyword arguments.
 
         Args:
             dataset (str): Required. Only one value allowed.
-            startdate (str or datetime): Required
-            enddate (str or datetime): Required
+            startdate (str or datetime): Required. Returned stations will
+                have data if the specified set/type from on or after this date.
+            enddate (str or datetime): Required. Returned stations will
+                have data if the specified set/type from on or before this date.
             datatype (str or list): Optional
             location (str or list): Optional
             station (str or list): Optional
@@ -179,16 +195,18 @@ class NCEIReader(object):
                     'limit',
                     'offset',
                     'includemetadata']
-        self.allow_multiple.remove('dataset')
+        self._allow_multiple.remove('dataset')
         url, params = self._prepare_query(url, [], kwargs, required, optional)
-        self.allow_multiple.append('dataset')
+        self._allow_multiple.append('dataset')
         return self._get(url, params)
 
 
     def get_datasets(self, *args, **kwargs):
         """Returns data from the NCEI dataset endpoint
 
-        See the class description for more details about available arguments.
+        Pass a dataset id as a positional argument to get data about that
+        category. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more
+        details about the available keyword arguments.
 
         Args:
             datatype (str or list): Optional
@@ -221,7 +239,9 @@ class NCEIReader(object):
     def get_data_categories(self, *args, **kwargs):
         """Returns code and labels for NCDI data categories
 
-        See the class description for more details about available arguments.
+        Pass a data category id as a positional argument to get data about
+        that category. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more
+        details about the available keyword arguments.
 
         Args:
             dataset (str or list): Optional
@@ -257,7 +277,9 @@ class NCEIReader(object):
     def get_data_types(self, *args, **kwargs):
         """Returns information about NCEI data categories
 
-        See the class description for more details about available arguments.
+        Pass a datatype id as a positional argument to get data about that
+        datatype. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more
+        details about the available keyword arguments.
 
         Args:
             dataset (str or list): Optional
@@ -294,7 +316,9 @@ class NCEIReader(object):
     def get_location_categories(self, *args, **kwargs):
         """Returns information about NCEI location categories
 
-        See the class description for more details about available arguments.
+        Pass a location category id as a positional argument to get data about
+        that category. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more
+        details about the available keyword arguments.
 
         Args:
             dataset (str or list): Optional
@@ -323,7 +347,9 @@ class NCEIReader(object):
     def get_locations(self, *args, **kwargs):
         """Returns information about NCEI locations
 
-        See the class description for more details about available arguments.
+        Pass a location id as a positional argument to get data about that
+        location. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more details
+        about the available keyword arguments.
 
         Args:
             dataset (str or list): Optional
@@ -356,7 +382,9 @@ class NCEIReader(object):
     def get_stations(self, *args, **kwargs):
         """Returns metadata for stations matching the given parameters
 
-        See the class description for more details about available arguments.
+        Pass a station id as a positional argument to get data about that
+        station. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more details
+        about the available keyword arguments.
 
         Args:
             dataset (str or list): Optional
@@ -393,7 +421,7 @@ class NCEIReader(object):
     def get_dataset(self, datasetid):
         """Convenience function to return metadata for a single station
 
-        Equivalent to self.get_stations(station)[0].
+        Equivalent to :code:`NCEIReader.get_stations(station)[0]`.
 
         Args:
             datasetid (str): NCDI dataset id
@@ -410,7 +438,7 @@ class NCEIReader(object):
     def get_data_category(self, datacategoryid):
         """Convenience function to return metadata for a single data category
 
-        Equivalent to self.get_data_categories(datacategoryid)[0].
+        Equivalent to :code:`NCEIReader.get_data_categories(datacategoryid)[0]`.
 
         Args:
             datacategoryid (str): NCDI data category id
@@ -427,7 +455,7 @@ class NCEIReader(object):
     def get_data_type(self, datatypeid):
         """Convenience function to return metadata for a single data type
 
-        Equivalent to self.get_data_types(datatypeid)[0].
+        Equivalent to :code:`NCEIReader.get_data_types(datatypeid)[0]`.
 
         Args:
             datatypeid (str): NCDI datatype id
@@ -444,7 +472,8 @@ class NCEIReader(object):
     def get_location_category(self, locationcategoryid):
         """Convenience function to return metadata for one location category
 
-        Equivalent to self.get_location_categories(locationcategoryid)[0].
+        Equivalent to
+        :code:`NCEIReader.get_location_categories(locationcategoryid)[0]`.
 
         Args:
             locationcategoryid (str): NCDI location category id
@@ -461,7 +490,7 @@ class NCEIReader(object):
     def get_location(self, locationid):
         """Convenience function to return metadata for a single location
 
-        Equivalent to self.get_locations(locationid)[0].
+        Equivalent to :code:`NCEIReader.get_locations(locationid)[0]`.
 
         Args:
             locationid (str): NCDI location id
@@ -478,7 +507,7 @@ class NCEIReader(object):
     def get_station(self, stationid):
         """Convenience function to return metadata for a single station
 
-        Equivalent to self.get_stations(stationid)[0].
+        Equivalent to :code:`NCEIReader.get_stations(stationid)[0]`.
 
         Args:
             station (str): station id
@@ -512,10 +541,10 @@ class NCEIReader(object):
 
 
     def find_all(self, search):
-        """Find key terms matching a search term across all endpoints
+        """Find key terms matching a search string across all endpoints
 
         Args:
-            search (str): search term
+            search (str): search string
             endpoint (str): the name of an NCEI endpoint
 
         Returns:
@@ -529,10 +558,10 @@ class NCEIReader(object):
 
 
     def find_in_endpoint(self, search, endpoint):
-        """Find key terms matching an optional search term in a given endpoint
+        """Find key terms that match the search string for a given endpoint
 
         Args:
-            search (str): a search term used to filter the results. If None,
+            search (str): a search string used to filter the results. If None,
                 the function will return a list of all terms for the endpoint.
             endpoint (str): the name of an NCEI endpoint
 
@@ -557,7 +586,7 @@ class NCEIReader(object):
         """Map name string to id for an endpoint
 
         Args:
-            value (str): id or name of an item expected in the given enpoint
+            value (str): id or name of an item expected in a given enpoint
             endpoint (str): the name of an NCEI endpoint
 
         Returns:
@@ -613,7 +642,7 @@ class NCEIReader(object):
             'stations': self.get_stations,
         }
         # Remove existing lookup files
-        for fp in glob.iglob(os.path.join(self.filepath, '*.csv')):
+        for fp in glob.iglob(os.path.join(self._filepath, '*.csv')):
             os.remove(fp)
         if keys is None:
             keys = endpoints.keys()
@@ -629,9 +658,10 @@ class NCEIReader(object):
             except KeyError:
                 raise Exception('{} is not a valid id'.format(key))
             else:
-                fp = os.path.join(self.filepath, key + '.csv')
+                fp = os.path.join(self._filepath, key + '.csv')
                 with open(fp, 'wb') as f:
                     writer = csv.writer(f, delimiter=',', quotechar='"')
+                    writer.writerow(['id', 'name'])
                     for result in results:
                         row = [result['id'], result['name']]
                         writer.writerow(row)
@@ -833,7 +863,7 @@ class NCEIReader(object):
         # Check kwargs against validation functions
         for key in kwargs.keys():
             vals = kwargs[key]
-            if isinstance(vals, list) and not key in self.allow_multiple:
+            if isinstance(vals, list) and not key in self._allow_multiple:
                 raise Exception('{} only accepts one value in the'
                                 ' {} endpoint'.format(key, endpoint))
             elif not isinstance(vals, list):
@@ -841,7 +871,7 @@ class NCEIReader(object):
             validated = []
             for val in vals:
                 try:
-                    value, status = self.validators[key](val, key, endpoint)
+                    value, status = self._validators[key](val, key, endpoint)
                 except KeyError:
                     # Catches bad parameter names. In practice, this should
                     # never occur because bad params should be weeded out
@@ -854,7 +884,7 @@ class NCEIReader(object):
                         validated.append(value)
                         self.pprint(u' {}: {} is valid!'.format(key, value),
                                     self.debug, 2)
-            if not key in self.allow_multiple:
+            if not key in self._allow_multiple:
                 validated = ''.join(validated)
             # Map helper fields to corresponding query fields
             try:
