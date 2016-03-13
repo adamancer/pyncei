@@ -8,7 +8,7 @@ except:
                         ' for more information about pyncei.')
 
 setup(name='pyncei',
-      version='0.1',
+      version='0.12',
       description='Python bindings for NOAA\'s National Centers'
                   ' for Environomental Information webservices',
       long_description=long_description,
