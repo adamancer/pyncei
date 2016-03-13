@@ -166,14 +166,16 @@ class NCEIReader(object):
         """Retrieves historical climate data matching the given parameters
 
         See :py:func:`~pyncei.NCEIReader.NCEIReader` for more details about
-        available keyword arguments.
+        each keyword argument.
 
         Args:
             dataset (str): Required. Only one value allowed.
             startdate (str or datetime): Required. Returned stations will
-                have data if the specified set/type from on or after this date.
+                have data for the specified dataset/type from on or after
+                this date.
             enddate (str or datetime): Required. Returned stations will
-                have data if the specified set/type from on or before this date.
+                have data for the specified dataset/type from on or before
+                this date.
             datatype (str or list): Optional
             location (str or list): Optional
             station (str or list): Optional
@@ -206,7 +208,7 @@ class NCEIReader(object):
 
         Pass a dataset id as a positional argument to get data about that
         category. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more
-        details about the available keyword arguments.
+        details about each keyword argument.
 
         Args:
             datatype (str or list): Optional
@@ -241,7 +243,7 @@ class NCEIReader(object):
 
         Pass a data category id as a positional argument to get data about
         that category. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more
-        details about the available keyword arguments.
+        details about each keyword argument.
 
         Args:
             dataset (str or list): Optional
@@ -279,7 +281,7 @@ class NCEIReader(object):
 
         Pass a datatype id as a positional argument to get data about that
         datatype. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more
-        details about the available keyword arguments.
+        details about each keyword argument.
 
         Args:
             dataset (str or list): Optional
@@ -318,7 +320,7 @@ class NCEIReader(object):
 
         Pass a location category id as a positional argument to get data about
         that category. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more
-        details about the available keyword arguments.
+        details about each keyword argument.
 
         Args:
             dataset (str or list): Optional
@@ -345,11 +347,11 @@ class NCEIReader(object):
 
 
     def get_locations(self, *args, **kwargs):
-        """Returns information about NCEI locations
+        """Returns metadata for locations matching the given parameters
 
         Pass a location id as a positional argument to get data about that
         location. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more details
-        about the available keyword arguments.
+        about each keyword argument.
 
         Args:
             dataset (str or list): Optional
@@ -384,7 +386,7 @@ class NCEIReader(object):
 
         Pass a station id as a positional argument to get data about that
         station. See :py:func:`~pyncei.NCEIReader.NCEIReader` for more details
-        about the available keyword arguments.
+        about each keyword argument.
 
         Args:
             dataset (str or list): Optional
@@ -885,7 +887,9 @@ class NCEIReader(object):
                         self.pprint(u' {}: {} is valid!'.format(key, value),
                                     self.debug, 2)
             if not key in self._allow_multiple:
-                validated = ''.join(validated)
+                if len(validated) > 1:
+                    raise Exception('{} only accepts one value'.format(key))
+                validated = validated[0]
             # Map helper fields to corresponding query fields
             try:
                 self.endpoints.index(self.get_endpoint(key))
