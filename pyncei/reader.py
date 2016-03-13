@@ -29,11 +29,11 @@ class NCEIReader(object):
         wait (float): Time in seconds between requests. NCEI
             allows a maximum of five queries per second.
 
-    The get functions described below use a common set of arguments. The
-    sortorder, limit, offset, count, and max arguments are always available;
-    the others vary by endpoint. Most values appear to be case-sensitive.
-    Query validation done by this class should capture most but not all
-    case errors.
+    The get functions described below use a common set of keyword arguments.
+    The sortorder, limit, offset, count, and max arguments can be used in
+    any get function; other keywords vary by endpoint. Most values appear to
+    be case-sensitive. Query validation done by this class should capture
+    most but not all case errors.
 
     Args:
         dataset (str or list): the id or name of a NCEI dataset. Multiple
@@ -61,7 +61,7 @@ class NCEIReader(object):
         sortorder (str): specifies whether sort is ascending or descending.
             Must be 'asc' or 'desc'.
         limit (int): number of records to return per query
-        offset (int): number of records to offset
+        offset (int): index of the first record to return
         count (bool): if present, query returns total number of records
         max (int): maximum number of records to return
     """
@@ -547,7 +547,6 @@ class NCEIReader(object):
 
         Args:
             search (str): search string
-            endpoint (str): the name of an NCEI endpoint
 
         Returns:
             List of (endpoint, id, name) for matching key terms from all
