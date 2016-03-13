@@ -1,3 +1,3 @@
-from .NCEIReader import NCEIReader
+from .reader import NCEIReader
 
 __all__ = ['NCEIReader']

@@ -1,10 +1,10 @@
 pyncei
 ======
 
-pyncei.NCEIReader module
-------------------------
+pyncei.reader
+-------------
 
-.. automodule:: pyncei.NCEIReader
+.. automodule:: pyncei.reader
     :members:
     :undoc-members:
     :show-inheritance:
