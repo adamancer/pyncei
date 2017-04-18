@@ -24,6 +24,10 @@ class NCEIReader(object):
     Attributes:
         cache (int): Time in seconds to cache requests. If 0, requests
             are not cached.
+        encode_queries (bool): specifies whether to encode queries. The
+            NCEI endpoint does not seem to work with encoded params, so
+            when using something like FIPS codes this option should be
+            set to True.
         endpoints (list): List of available endpoints
         token (str): NCEI token
         wait (float): Time in seconds between requests. NCEI
