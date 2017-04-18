@@ -67,7 +67,7 @@ class NCEIReader(object):
     """
 
 
-    def __init__(self, token, wait=0.2, cache=86400):
+    def __init__(self, token, wait=0.2, cache=86400, encode_queries=True):
         """Initialize NCEIReader object
 
         Args:
@@ -75,11 +75,16 @@ class NCEIReader(object):
             wait (float or int):
             cache (int): time in seconds to cache requests. If 0, requests
                 are not cached.
+            encode_queries (bool): specifies whether to encode queries. The
+                NCEI endpoint does not seem to work with encoded params, so
+                when using something like FIPS codes this option should be
+                set to True.
 
         Returns:
             None
         """
         self.debug = False
+        self.encode_queries = encode_queries
 
         # Queries are capped at five per second, so enforce that with
         # a minimum wait time of 0.2 seconds
@@ -603,8 +608,8 @@ class NCEIReader(object):
             try:
                 self._lookups[endpoint]
             except KeyError:
-                self.pprint(u'**Warning: {} not checked. No lookup configured'
-                             ' for {} endpoint**'.format(orig_value, endpoint))
+                self.pprint(u'**Warning: No lookup configured for'
+                             ' {}**'.format(orig_value))
                 return orig_value, True
             else:
                 value = value.split(' ')
@@ -698,6 +703,8 @@ class NCEIReader(object):
         Returns:
             List of dicts containing the requested data
         """
+        if not self.encode_queries:
+            params = self._write_query_string(params)
         r = self.s.get(url, params=params)
         if r.status_code == 200:
             return json.loads(r.text)['metadata']['resultset']['count']
@@ -755,7 +762,10 @@ class NCEIReader(object):
         results = []
         while len(results) < total:
             self.pprint(u'Requesting data...', self.debug, 2)
-            r = self.s.get(url, params=params)
+            query = params
+            if not self.encode_queries:
+                query = self._write_query_string(params)
+            r = self.s.get(url, params=query)
             self.pprint(u'Retrieved {}'.format(r.url), self.debug, 2)
             if r.status_code == 200:
                 # Enforce a wait period between requests
@@ -807,6 +817,16 @@ class NCEIReader(object):
                         ' ({} status): {}').format(r.url, r.status_code, r.text)
                 raise Exception(msg)
         return results
+
+
+    def _write_query_string(self, params):
+        """Writes but does not encode a query string"""
+        query = []
+        for key, vals in params.iteritems():
+            for val in vals if isinstance(vals, list) else [vals]:
+                query.append('{}={}'.format(key, val))
+        return '&'.join(query)
+
 
 
     def _prepare_query(self, url, args, kwargs, required, optional):
