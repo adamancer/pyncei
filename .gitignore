@@ -22,3 +22,6 @@ README.rst
 
 # System files
 *.DS_Store
+
+# Requests cache
+*.sqlite

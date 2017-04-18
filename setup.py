@@ -2,7 +2,7 @@ from setuptools import setup
 
 # Read long_description from file
 try:
-    long_description = open('README.rst', 'rb').read()
+    long_description = open('_README.rst', 'rb').read()
 except:
     long_description = ('Please see https://github.com/adamancer/pyncei.git'
                         ' for more information about pyncei.')
