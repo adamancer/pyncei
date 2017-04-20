@@ -121,7 +121,8 @@ class NCEIReader(object):
             'station': self._check_name,
             'startdate': self._check_date,
             'sortfield': self._check_sortfield,
-            'sortorder': self._check_sortorder
+            'sortorder': self._check_sortorder,
+            'units': self._check_units
             }
 
         # List of fields that can occur more than once in a given query.
@@ -190,6 +191,7 @@ class NCEIReader(object):
             station (str or list): Optional
             sortfield (str): Optional. If provided, must be one of 'datatype',
                 'date', or 'station'.
+            units (str): One of 'standard' or 'metric'
 
         Returns:
             List of dicts containing historical weather data
@@ -197,7 +199,8 @@ class NCEIReader(object):
         url = 'http://www.ncdc.noaa.gov/cdo-web/api/v2/data'
         required = ['dataset',
                     'startdate',
-                    'enddate']
+                    'enddate',
+                    'units']
         optional = ['datatype',
                     'location',
                     'station',
@@ -206,6 +209,9 @@ class NCEIReader(object):
                     'limit',
                     'offset',
                     'includemetadata']
+        # Assign default unit. Returned values are nonsense without this.
+        if not kwargs.get('units'):
+            kwargs['units'] = 'metric'
         self._allow_multiple.remove('dataset')
         url, params = self._prepare_query(url, [], kwargs, required, optional)
         self._allow_multiple.append('dataset')
@@ -740,7 +746,7 @@ class NCEIReader(object):
                 # Offsets 0 and 1 both return the same record. Specifying
                 # an offset of 1 makes subsequent offsets (made by adding
                 # the limit to the last offset) start at the right record.
-                if offset is 0:
+                if not offset:
                     params['offset'] = offset = 1
             # Minimize number of queries required to retrieve data
             # by adjusting limit based on total number of records
@@ -1054,6 +1060,30 @@ class NCEIReader(object):
             (error message, False) if not.
         """
         valid = ['asc', 'desc']
+        try:
+            value = value.lower()
+        except AttributeError:
+            pass
+        else:
+            if value in valid:
+                return value, True
+        msg = u'Must be one of the following: {}'.format(', '.join(valid))
+        return msg, False
+
+
+    def _check_units(self, value, key, endpoint):
+        """Validate units
+
+        Args:
+            value (str): 'standard' or 'metric'
+            key (str): identity of field being checked
+            endpoint (str): name of current NCEI endpoint
+
+        Returns:
+            Tuple (validated string, True) if order is valid, or tuple
+            (error message, False) if not.
+        """
+        valid = ['standard', 'metric']
         try:
             value = value.lower()
         except AttributeError:
