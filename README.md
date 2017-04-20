@@ -38,7 +38,8 @@ ncei.get_data(dataset='GHCND',
               station=['COOP:010957'],
               datatype=['TMIN','TMAX'],
               startdate='2015-03-01',
-              enddate='2016-03-01')
+              enddate='2016-03-01',
+              units='metric')
 ```
 
 The table below provides a quick overview of the various endpoints and
