@@ -3,207 +3,196 @@ pyncei
 
 This module provides tools to request data from the [Climate Data Online
 webservices](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted)
-provided by NOAA's National Centers for Environmental information (formerly
-the National Center for Climate Data). Install with:
+provided by NOAA’s National Centers for Environmental information
+(formerly the National Center for Climate Data).
 
-```
-pip install pyncei
-```
+Documentation for this project is available on [Read The
+Docs](http://pyncei.readthedocs.org/en/latest/pyncei.html).
 
-Documentation for this project is available on
-[Read The Docs](http://pyncei.readthedocs.org/en/latest/pyncei.html).
+Install
+-------
+
+Install using pip:
+
+    pip install pyncei
+
+Alternatively, you can use the
+[environment.yml](https://github.com/adamancer/pyncei/blob/master/environment.yml)
+file included in the GitHub repository to build a conda environment and
+install pyncei there:
+
+    conda env create -f environment.yml
+    conda activate pyncei
+    pip install pyncei
+
+This method includes geopandas, which is absent from the pip
+installation but if installed allows the `to_dataframe()` method to
+return a GeoDataFrame when coordinates are provided by NCEI.
 
 Getting started
 ---------------
 
-To use the NCEI webservices, you'll need a token. The token is a 32-character
-string provided by NCEI; users can request one
+To use the NCEI webservices, you’ll need a token. The token is a
+32-character string provided by NCEI; users can request one
 [here](https://www.ncdc.noaa.gov/cdo-web/token). Pass the token to
-[pyncei.reader.NCEIReader()] to get started:
+`NCEIBot` to get started:
 
-```python
-from pyncei.reader import NCEIReader
+``` python
+from pyncei.reader import NCEIBot
 
-token = 'AnExampleTokenFromTheNCEIWebsite'
-ncei = NCEIReader(token)
+ncei = NCEIBot("ExampleNCEIAPIToken")
 ```
 
-The NCEIReader class includes methods corresponding to each of the endpoints
+You can cache queries by using the cache_name parameter when creating an
+`NCEIBot` object:
+
+``` python
+ncei = NCEIBot("ExampleNCEIAPIToken", cache_name="ncei_cache")
+```
+
+The cache uses
+[CachedSession](https://requests-cache.readthedocs.io/en/stable/session.html#requests_cache.session.CachedSession)
+from the requests-cache module. Caching behavior can be modified by
+passing keyword arguments accepted by that class to `NCEIBot`. For
+example, successful requests are cached indefinitely by default if the
+cache is being used. Users can change this behavior using the
+expire_after keyword argument when initializing an `NCEIBot` object.
+
+`NCEIBot` includes methods corresponding to each of the endpoints
 described on the CDO website. Query parameters specified by CDO can be
 passed as arguments:
 
-```python
-ncei.get_stations(location='FIPS:11')
-ncei.get_data(dataset='GHCND',
-              station=['COOP:010957'],
-              datatype=['TMIN','TMAX'],
-              startdate='2015-03-01',
-              enddate='2016-03-01',
-              units='metric')
+``` python
+response = ncei.get_data(
+      datasetid="GHCND",
+      stationid=["GHCND:USC00186350"],
+      datatypeid=["TMIN", "TMAX"],
+      startdate="2015-12-01",
+      enddate="2015-12-02",
+  )
 ```
 
-The table below provides a quick overview of the various endpoints and
-available parameters:
+Each method call may make multiple requests to the API, for example, if
+more than 1,000 daily records are requested. Responses are combined in
+an `NCEIResponse` object, which extends the list class. *Individual
+responses* can be accessed using list methods, for example, by iterating
+through the object or accessing a single item using its index. *Data
+from all responses* can be accessed using the `values()` method, which
+returns an iterator of dicts, each of which is a single result:
 
-| CDO Endpoint         | CDO Query Parameter | NCEIReader Method           | NCEIReader Argument | Values                   |
-| :------------------- | :------------------ | :-------------------------- | :------------------ | :----------------------- |
-| [datasets]           | datasetid           | [get_datasets()]            | dataset             | [datasets.csv]           |
-| [datacategories]     | datacategoryid      | [get_data_categories()]     | datatype            | [datatypes.csv]          |
-| [datatypes]          | datatypeid          | [get_data_types()]          | datacategory        | [datacategories.csv]     |
-| [locationcategories] | locationcategoryid  | [get_location_categories()] | locationcategory    | [locationcategories.csv] |
-| [locations]          | locationid          | [get_locations()]           | location            | [locations.csv]          |
-| [stations]           | stationid           | [get_stations()]            | station             | --                       |
-| [data]               | --                  | [get_data()]                | --                  | --                       |
-
-Each NCEIReader method accepts either a single positional argument (used to
-return data for a single id) or a series of keyword arguments.
-
-Note that id fields used by CDO have been renamed. For example, datasetid has
-been renamed dataset, and locationid has been renamed location. Unlike CDO,
-which accepts only ids, NCEIReader will accept either ids or name strings.
-If names are used, NCEIReader attempts to map the name strings to valid id
-using [NCEIReader.map_name()], called manually here:
-
-```python
-ncei.map_name('District of Columbia', 'locations')
-# returns ('FIPS:11', True)
+``` python
+for val in response.values():
+    print(val)
 ```
 
-When the mapping function fails to find an exact match, it throws an exception
-containing a list of similar values that can be used to refine the original
-query.
+The response object includes a `to_csv()` method to write results to a
+file:
 
-Finding the right term
-----------------------
-
-If you have no idea what data is available or where to look, you have a few
-options. You can search the terms available for each endpoint using
-[NCEIReader.find_in_endpoint()]:
-
-```python
-ncei.find_in_endpoint('District of Columbia', 'locations')
-# returns ['FIPS:11 => District of Columbia',
-#          'FIPS:11001 => District of Columbia County, DC']
+``` python
+response.to_csv("station_data.csv")
 ```
 
-If the search term is None, this function will return ALL available ids
-for the given endpoint. You can search across all endpoints using
-[NCEIReader.find_all()]:
+As well as a `to_dataframe()` method to write results to a pandas
+DataFrame (or a geopandas GeoDataFrame if that module is installed and
+the results include coordinates):
 
-```python
-ncei.find_all('temperature')
-# returns [('datacategories', 'ANNTEMP', 'Annual Temperature'),
-#          ('datacategories', 'AUTEMP', 'Autumn Temperature'),...]
+``` python
+df = response.to_dataframe()
 ```
 
-You can also browse the source files in the Values column of the table
-above. The data in these files shouldn't change much, but they can be updated
-using [NCEIReader.refresh_lookups()] if necessary:
+The table below provides an overview of the available endpoints and
+their corresponding methods:
 
-```python
+| CDO Endpoint                                                                             | CDO Query Parameter | NCEIBot Method              | Values                                                                                                        |
+|:-----------------------------------------------------------------------------------------|:--------------------|:----------------------------|:--------------------------------------------------------------------------------------------------------------|
+| [datasets](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets)                     | datasetid           | `get_datasets()`            | [datasets.csv](https://github.com/adamancer/pyncei/tree/master/pyncei/files/datasets.csv)                     |
+| [datacategories](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#dataCategories)         | datacategoryid      | `get_data_categories()`     | [datatypes.csv](https://github.com/adamancer/pyncei/tree/master/pyncei/files/datatypes.csv)                   |
+| [datatypes](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#dataTypes)                   | datatypeid          | `get_data_types()`          | [datacategories.csv](https://github.com/adamancer/pyncei/tree/master/pyncei/files/datacategories.csv)         |
+| [locationcategories](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#locationCategories) | locationcategoryid  | `get_location_categories()` | [locationcategories.csv](https://github.com/adamancer/pyncei/tree/master/pyncei/files/locationcategories.csv) |
+| [locations](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#locations)                   | locationid          | `get_locations()`           | [locations.csv](https://github.com/adamancer/pyncei/tree/master/pyncei/files/locations.csv)                   |
+| [stations](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#stations)                     | stationid           | `get_stations()`            | –                                                                                                             |
+| [data](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#data)                             | –                   | `get_data()`                | –                                                                                                             |
+
+Each of the NCEIBot get methods accepts either a single positional
+argument (used to return data for a single entity) or a series of
+keyword arguments (used to search for and retrieve all matching
+entities). Unlike CDO, which accepts only ids, `NCEIBot` will try to
+work with either ids or name strings. If names are provided, `NCEIBot`
+attempts to map the name strings to valid ids using `find_ids()`:
+
+``` python
+ncei.find_ids("District of Columbia", "locations")
+```
+
+If a unique match cannot be found, `find_ids()` returns all identifiers
+that contain the search term. If you have no idea what data is available
+or where to look, you can search across all endpoints by omitting the
+endpoint argument:
+
+``` python
+ncei.find_ids("temperature")
+```
+
+Or you can browse the source files in the Values column of the table
+above. The data in these files shouldn’t change much, but they can be
+updated using `refresh_lookups()` if necessary:
+
+``` python
 ncei.refresh_lookups()
 ```
-
-Queries are cached for one day by default. Users can change this behavior
-using the cache parameter when initializing an NCEIReader object. This
-parameter specifies the number of seconds pages should persist in the cache;
-a value of zero disables the cache entirely.
 
 Example: Find and return data from a station
 --------------------------------------------
 
-```python
-import csv
+``` python
 from datetime import date
 
-from pyncei import NCEIReader
+from pyncei import NCEIBot, NCEIResponse
 
 
-# Initialize NCEIReader object using your token string
-ncei = NCEIReader('AnExampleTokenFromTheNCEIWebsite')
-ncei.debug = True  # this flag produces verbose output
+# Initialize NCEIBot object using your token string
+ncei = NCEIBot("ExampleNCEIAPIToken", cache_name="ncei")
 
-# Set the parameters you're looking for. You can use ncei.find_all() or
-# ncei_find_in_endpoint() to search the available parameters if you don't
-# know what to use.
-mindate = '1966-01-01'  # either yyyy-mm-dd or a datetime object
-maxdate = '2015-12-31'
-datatypes = ['TMIN', 'TMAX']
-dataset = 'GHCND'
+# Set the date range
+mindate = date(2016, 1, 1)  # either yyyy-mm-dd or a datetime object
+maxdate = date(2019, 12, 31)
 
-# You can manually verify parameters if you're so inclined
-for datatype in datatypes:
-    ncei.map_name(datatype, 'datatypes')
+# Get all DC stations operating between mindate and maxdate
+stations = ncei.get_stations(
+    datasetid="GHCND",
+    datatypeid=["TMIN", "TMAX"],
+    locationid="FIPS:11",
+    startdate=mindate,
+    enddate=maxdate,
+)
 
-# Get all DC stations operating between mindate and maxdate. The date
-# parameters in station queries are a little odd. According to the docs,
-# queries will return stations with data from on/before the enddate and
-# on/after the startdate. If both parameters are included, the result set
-# seems to include all stations that EITHER have data from on/before the
-# startdate OR have data on/after the enddate.
-stations = ncei.get_stations(location='District of Columbia',
-                             dataset=dataset,
-                             datatype=datatypes,
-                             enddate=mindate)
+# Select the station with the best data coverage
+station = sorted(stations.values(), key=lambda s: -int(s["datacoverage"]))[0]
 
-# Filter out stations no longer operating using maxdate
-stations = [station for station in stations
-            if station['maxdate'] >= maxdate]
-
-# Find the station with the best data coverage in the result set
-stations.sort(key=lambda s:s['datacoverage'], reverse=True)
-station = stations[0]
-minyear = int(station['mindate'][:4])
-
-# Get temperature data for the the lifetime of the station. Note that for the
-# data endpoint, you can't request more than one year's worth of data at a
-# time.
-year = date.today().year - 1
-results = []
-while year >= minyear:
-    results.extend(ncei.get_data(dataset=dataset,
-                                 station=station['id'],
-                                 datatype=datatypes,
-                                 startdate=date(year, 1, 1),
-                                 enddate=date(year, 12, 31)))
+# Get temperature data for the given dates. Note that for the
+# data endpoint, you can't request more than one year's worth of daily
+# data at a time.
+year = maxdate.year
+response = NCEIResponse()
+while year >= mindate.year:
+    response.extend(
+        ncei.get_data(
+            datasetid=datasetid,
+            stationid=station["id"],
+            datatypeid=datatypeids,
+            startdate=date(year, 1, 1),
+            enddate=date(year, 12, 31),
+        )
+    )
     year -= 1
 
-# Write results to csv
-fn = station['id'].replace(':', '') + '.csv'
-with open(fn, 'wb') as f:
-    writer = csv.writer(f, delimiter=',', quotechar='"')
-    keys = ('date', 'datatype', 'value')
-    writer.writerow(keys)
-    for row in results:
-        row['date'] = row['date'].split('T')[0].replace('-', '')
-        writer.writerow([row[key] for key in keys])
+# Save values to CSV using the to_csv method
+response.to_csv(station["id"].replace(":", "") + ".csv")
 
+# Alternatively, merge observation and station data together in a pandas
+# DataFrame. If geopandas is installed and coordinates are given, this
+# method will return a GeoDataFrame instead.
+df_stations = stations.to_dataframe()
+df_response = response.to_dataframe()
+df_merged = df_stations.merge(df_response, left_on="id", right_on="station")
 ```
-
-[datasets]: http://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets
-[datacategories]: http://www.ncdc.noaa.gov/cdo-web/webservices/v2#dataCategories
-[datatypes]: http://www.ncdc.noaa.gov/cdo-web/webservices/v2#dataTypes
-[locationcategories]: http://www.ncdc.noaa.gov/cdo-web/webservices/v2#locationCategories
-[locations]: http://www.ncdc.noaa.gov/cdo-web/webservices/v2#locations
-[stations]: http://www.ncdc.noaa.gov/cdo-web/webservices/v2#stations
-[data]: http://www.ncdc.noaa.gov/cdo-web/webservices/v2#data
-
-[pyncei.reader.NCEIReader()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader
-[NCEIReader.find_all()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.find_all
-[NCEIReader.find_in_endpoint()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.find_in_endpoint
-[NCEIReader.map_name()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.map_name
-[NCEIReader.refresh_lookups()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.refresh_lookups
-
-[get_data()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.get_data
-[get_datasets()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.get_datasets
-[get_data_types()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.get_data_types
-[get_data_categories()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.get_data_categories
-[get_locations()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.get_locations
-[get_location_categories()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.get_location_categories
-[get_stations()]: http://pyncei.readthedocs.org/en/latest/pyncei.html#pyncei.reader.NCEIReader.get_stations
-
-[datacategories.csv]: https://github.com/adamancer/pyncei/tree/master/pyncei/files/datacategories.csv
-[datasets.csv]: https://github.com/adamancer/pyncei/tree/master/pyncei/files/datasets.csv
-[datatypes.csv]: https://github.com/adamancer/pyncei/tree/master/pyncei/files/datatypes.csv
-[locationcategories.csv]: https://github.com/adamancer/pyncei/tree/master/pyncei/files/locationcategories.csv
-[locations.csv]: https://github.com/adamancer/pyncei/tree/master/pyncei/files/locations.csv

@@ -1,30 +1,19 @@
-.. pyncei documentation master file, created by
-   sphinx-quickstart on Sat Mar 12 15:48:49 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 pyncei
 ======
 
-Python bindings for the Climate Data Online webservices provided by NOAA's
-National Centers for Environmental information (formerly the National Center
-for Climate Data). Install with :code:`pip install pyncei`.
+pyncei provides tools to request data from the `Climate Data Online
+v2 webservices <http://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted>`_
+provided by NOAA's National Centers for Environmental information (formerly
+the National Center for Climate Data).
 
-**Project Info**
+Source code for this project is located on
+`GitHub <https://github.com/adamancer/pyncei>`_.
 
-- `pyncei on GitHub <https://github.com/adamancer/pyncei>`_
-
-**Contents**
+Contents
+--------
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
-   pyncei
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   user-guide
+   api

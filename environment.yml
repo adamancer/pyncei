@@ -1,0 +1,11 @@
+name: pyncei
+channels:
+- conda-forge
+- default
+dependencies:
+- python>=3.7
+- pip
+- geopandas
+- pandas
+- requests
+- requests-cache

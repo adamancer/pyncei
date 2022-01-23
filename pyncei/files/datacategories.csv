@@ -1,4 +1,4 @@
-id,name
+﻿id,name
 ANNAGR,Annual Agricultural
 ANNDD,Annual Degree Days
 ANNPRCP,Annual Precipitation
@@ -15,6 +15,7 @@ ECHOTOP,Echo Tops
 EVAP,Evaporation
 HYDROMETEOR,Hydrometeor Type
 LAND,Land
+MISC,Miscellany
 OTHER,Other
 OVERLAY,Overlay
 PRCP,Precipitation

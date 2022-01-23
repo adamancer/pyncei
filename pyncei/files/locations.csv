@@ -1,4 +1,4 @@
-id,name
+﻿id,name
 CITY:AE000001,"Abu Dhabi, AE"
 CITY:AE000002,"Ajman, AE"
 CITY:AE000003,"Dubai, AE"
@@ -261,6 +261,8 @@ CITY:CY000001,"Lemesos, CY"
 CITY:CY000002,"Nicosia, CY"
 CITY:DA000001,"Alborg, DA"
 CITY:DA000003,"Copenhagen, DA"
+CITY:DR000004,"La Romana, DR"
+CITY:DR000007,"San Pedro De Macoris, DR"
 CITY:DR000008,"Santiago, DR"
 CITY:DR000009,"Santo Domingo, DR"
 CITY:EC000002,"Babahoyo, EC"
@@ -367,6 +369,7 @@ CITY:GM000022,"Schwerin, GM"
 CITY:GM000023,"Stuttgart, GM"
 CITY:GM000024,"Wiesbaden, GM"
 CITY:GR000001,"Athens, GR"
+CITY:GR000002,"Ioannina, GR"
 CITY:GR000003,"Iraklion, GR"
 CITY:GR000004,"Larisa, GR"
 CITY:GR000006,"Piraeus, GR"
@@ -387,6 +390,7 @@ CITY:HU000003,"Debrecen, HU"
 CITY:HU000008,"Miskolc, HU"
 CITY:HU000010,"Pecs, HU"
 CITY:HU000011,"Szeged, HU"
+CITY:HU000014,"Szombathely, HU"
 CITY:IC000001,"Reykjavik, IC"
 CITY:ID000001,"Ambon, ID"
 CITY:ID000002,"Balikpapan, ID"
@@ -1032,9 +1036,14 @@ CITY:UG000003,"Jinja, UG"
 CITY:UK000001,"Belfast, UK"
 CITY:UK000002,"Birmingham, UK"
 CITY:UK000004,"Dundee, UK"
+CITY:UK000005,"Edinburgh, UK"
+CITY:UK000006,"Glasgow, UK"
+CITY:UK000007,"Leeds, UK"
 CITY:UK000008,"Liverpool, UK"
 CITY:UK000009,"London, UK"
 CITY:UK000010,"Manchester, UK"
+CITY:UK000011,"Sheffield, UK"
+CITY:UK000012,"Southampton, UK"
 CITY:UP000001,"Cherkasy, UP"
 CITY:UP000002,"Chernihiv, UP"
 CITY:UP000003,"Chernivtsi, UP"
@@ -5642,6 +5651,7 @@ FIPS:GB,Gabon
 FIPS:GG,Georgia
 FIPS:GH,Ghana
 FIPS:GI,Gibraltar
+FIPS:GK,Guernsey
 FIPS:GL,Greenland
 FIPS:GM,Germany
 FIPS:GR,Greece
@@ -5655,6 +5665,7 @@ FIPS:HR,Croatia
 FIPS:HU,Hungary
 FIPS:IC,Iceland
 FIPS:ID,Indonesia
+FIPS:IM,Isle of Man
 FIPS:IN,India
 FIPS:IO,British Indian Ocean Territory
 FIPS:IR,Iran
@@ -5663,6 +5674,7 @@ FIPS:IT,Italy
 FIPS:IV,Cote d'Ivoire
 FIPS:IZ,Iraq
 FIPS:JA,Japan
+FIPS:JE,Jersey
 FIPS:JM,Jamaica
 FIPS:JO,Jordan
 FIPS:KE,Kenya
@@ -38766,6 +38778,7 @@ ZIP:99686,"Valdez, AK 99686"
 ZIP:99688,"Willow, AK 99688"
 ZIP:99689,"Yakutat, AK 99689"
 ZIP:99691,"Nikolai, AK 99691"
+ZIP:99692,"Dutch Harbor, AK 99692"
 ZIP:99701,"Fairbanks, AK 99701"
 ZIP:99702,"Eielson AFB, AK 99702"
 ZIP:99703,"Fort Wainwright, AK 99703"

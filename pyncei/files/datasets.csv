@@ -1,7 +1,7 @@
-id,name
-ANNUAL,Annual Summaries
+﻿id,name
 GHCND,Daily Summaries
-GHCNDMS,Monthly Summaries
+GSOM,Global Summary of the Month
+GSOY,Global Summary of the Year
 NEXRAD2,Weather Radar (Level II)
 NEXRAD3,Weather Radar (Level III)
 NORMAL_ANN,Normals Annual/Seasonal
