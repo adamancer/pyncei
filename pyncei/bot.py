@@ -75,6 +75,7 @@ class NCEIBot:
         """
 
         self.validate_params = False
+        self.max_retries = 12
 
         # Queries are capped at five per second, so enforce that with
         # a minimum wait time of 0.2 seconds
@@ -519,8 +520,8 @@ class NCEIBot:
                         row = [result["id"], result["name"]]
                         writer.writerow(row)
 
-    def _get_with_backoff(self, url, params):
-        """Performs a get request with an exponential backoff
+    def _get_with_retry(self, url, params):
+        """Retries a get request with an exponential backoff
 
         Args:
             url (str): NCDI webservice url
@@ -529,15 +530,26 @@ class NCEIBot:
         Returns:
             response to given request
         """
-        for i in range(10):
+        for i in range(self.max_retries):
             try:
-                return self._session.get(url, params=self._encode_params(params))
-            except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
-                if i >= 9:
-                    raise
-                wait = 30 * 2 ** i
-                print(f"Request failed! Retrying in {wait} seconds")
+                resp = self._session.get(url, params=self._encode_params(params))
+                # Retry if status code indicates a temporary server problem
+                if resp.status_code == 503:
+                    raise requests.exceptions.ConnectionError(
+                        f"Request failed: {resp.url} (status_code={resp.status_code})"
+                    )
+                return resp
+            except (
+                requests.exceptions.ConnectionError,
+                requests.exceptions.Timeout,
+            ) as err:
+                wait = 2 ** i
+                print(
+                    f"Retrying temporarily failed request in {wait}s"
+                    f" (url={url}, params={params}, error='{err}')"
+                )
                 time.sleep(wait)
+        raise Exception(f"Request failed (url={url}, params={params})")
 
     def _get(self, url, params):
         """Retrieves all matching records for a given url and parameter set
@@ -596,7 +608,7 @@ class NCEIBot:
             logger.info("Requesting data")
 
             # NCEI does not like encoded colons, so encode the query string first
-            resp = self._get_with_backoff(url, params)
+            resp = self._get_with_retry(url, params)
             if resp.status_code == 200:
                 logger.info(f"Resolved {resp.url}")
 
