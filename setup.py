@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 long_description = (
     "pyncei provides tools to request data from the [Climate Data Online"
-    " v2 webservices](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted)"
+    " Web Services v2 API](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted)"
     " provided by NOAA's National Centers for Environmental information (formerly"
     " the National Center for Climate Data)."
     "\n\n"
@@ -23,8 +23,7 @@ setup(
     name="pyncei",
     maintainer="Adam Mansur",
     maintainer_email="mansura@si.edu",
-    description="Python bindings for NOAA's National Centers"
-    " for Environomental Information webservices",
+    description="Access data from NOAA's Climate Data Online Web Services v2 API",
     long_description=long_description,
     long_description_content_type="text/markdown",
     version="1.0",

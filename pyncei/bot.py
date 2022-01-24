@@ -1,4 +1,4 @@
-"""Python bindings for the NCEI Climate Data Online webservices"""
+"""Tools to access data from NOAA's Climate Data Online Web Services v2 API"""
 
 from copy import copy
 import csv
@@ -24,13 +24,16 @@ logger = logging.getLogger(__name__)
 
 
 class NCEIBot:
-    """Contains functions to request data from the NCEI webservices
+    """Contains functions to request data from the NCEI web services
 
     Attributes:
-        wait (float): Time in seconds between requests. NCEI
+        wait (float): time in seconds between requests. NCEI
             allows a maximum of five queries per second.
-        validate_params (bool): Whether to validate query parameters before
+        validate_params (bool): whether to validate query parameters before
             making a GET request. Defaults to False.
+        max_retries (int): number of times to retry requests that fail
+            because of temporary connectivity or server lapses. Retries
+            use an exponential backoff. Defaults to 12.
 
     The get functions described below use a common set of keyword arguments.
     The sortorder, limit, offset, and max arguments can be used in

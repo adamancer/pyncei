@@ -25,7 +25,7 @@ GeoDataFrame when coordinates are provided by NCEI.
 Getting started
 ---------------
 
-To use the NCEI webservices, you’ll need a token. The token is a
+To use the NCEI web services, you’ll need a token. The token is a
 32-character string provided by NCEI; users can request one
 [here](https://www.ncdc.noaa.gov/cdo-web/token). Pass the token to
 :py:class:`~pyncei.bot.NCEIBot` to get started:
