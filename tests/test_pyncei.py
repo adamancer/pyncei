@@ -105,17 +105,18 @@ def test_get_stations(ncei_cached, params):
     kwargs.update(params)
     response = ncei_cached.get_stations(**kwargs)
     vals = list(response.values())
+    # Exclude keys likely to change over time
     for val in vals:
-        del val["url"]
+        del val["datacoverage"]
+        del val["maxdate"]
         del val["retrieved"]
+        del val["url"]
     assert vals == [
         {
             "elevation": 45.7,
             "mindate": "1948-08-01",
-            "maxdate": "2021-09-30",
             "latitude": 38.9385,
             "name": "DALECARLIA RESERVOIR, DC US",
-            "datacoverage": 0.9824,
             "id": "GHCND:USC00182325",
             "elevationUnit": "METERS",
             "longitude": -77.1134,
@@ -123,10 +124,8 @@ def test_get_stations(ncei_cached, params):
         {
             "elevation": 15.2,
             "mindate": "1948-08-01",
-            "maxdate": "2021-09-30",
             "latitude": 38.91329,
             "name": "NATIONAL ARBORETUM DC, DC US",
-            "datacoverage": 0.9642,
             "id": "GHCND:USC00186350",
             "elevationUnit": "METERS",
             "longitude": -76.97009,
