@@ -6,6 +6,7 @@ from datetime import datetime
 import glob
 import logging
 import os
+import random
 import re
 import time
 import urllib.parse
@@ -536,8 +537,8 @@ class NCEIBot:
         for i in range(self.max_retries):
             try:
                 resp = self._session.get(url, params=self._encode_params(params))
-                # Retry if status code indicates a temporary server problem
-                if resp.status_code == 503:
+                # Retry if status code indicates a temporary problem
+                if resp.status_code in (429, 503):
                     raise requests.exceptions.ConnectionError(
                         f"Request failed: {resp.url} (status_code={resp.status_code})"
                     )
@@ -546,7 +547,9 @@ class NCEIBot:
                 requests.exceptions.ConnectionError,
                 requests.exceptions.Timeout,
             ) as err:
-                wait = 2 ** i
+                # Add a random number of milliseconds to the wait time to prevent
+                # multiple retries from synchronizing
+                wait = 2 ** i + random.randint(1, 1000) / 1000
                 print(
                     f"Retrying temporarily failed request in {wait}s"
                     f" (url={url}, params={params}, error='{err}')"
