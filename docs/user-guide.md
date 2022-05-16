@@ -31,7 +31,7 @@ To use the NCEI web services, you’ll need a token. The token is a
 :py:class:`~pyncei.bot.NCEIBot` to get started:
 
 ``` python
-from pyncei.reader import NCEIBot
+from pyncei import NCEIBot
 
 ncei = NCEIBot("ExampleNCEIAPIToken")
 ```
