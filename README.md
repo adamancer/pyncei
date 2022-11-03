@@ -3,12 +3,12 @@ pyncei
 
 This module provides tools to access data from NOAA’s [Climate Data
 Online Web Services v2
-API](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted)
+API](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted)
 provided by NOAA’s National Centers for Environmental information
 (formerly the National Center for Climate Data).
 
 Documentation for this project is available on [Read The
-Docs](http://pyncei.readthedocs.org/en/latest/pyncei.html).
+Docs](https://pyncei.readthedocs.org/en/latest/).
 
 Install
 -------
@@ -106,13 +106,13 @@ their corresponding methods:
 
 | CDO Endpoint                                                                             | CDO Query Parameter | NCEIBot Method              | Values                                                                                                      |
 |:-----------------------------------------------------------------------------------------|:--------------------|:----------------------------|:------------------------------------------------------------------------------------------------------------|
-| [datasets](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets)                     | datasetid           | `get_datasets()`            | [datasets.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/datasets.csv)                     |
-| [datacategories](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#dataCategories)         | datacategoryid      | `get_data_categories()`     | [datatypes.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/datatypes.csv)                   |
-| [datatypes](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#dataTypes)                   | datatypeid          | `get_data_types()`          | [datacategories.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/datacategories.csv)         |
-| [locationcategories](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#locationCategories) | locationcategoryid  | `get_location_categories()` | [locationcategories.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/locationcategories.csv) |
-| [locations](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#locations)                   | locationid          | `get_locations()`           | [locations.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/locations.csv)                   |
-| [stations](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#stations)                     | stationid           | `get_stations()`            | –                                                                                                           |
-| [data](http://www.ncdc.noaa.gov/cdo-web/webservices/v2#data)                             | –                   | `get_data()`                | –                                                                                                           |
+| [datasets](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets)                     | datasetid           | `get_datasets()`            | [datasets.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/datasets.csv)                     |
+| [datacategories](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#dataCategories)         | datacategoryid      | `get_data_categories()`     | [datatypes.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/datatypes.csv)                   |
+| [datatypes](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#dataTypes)                   | datatypeid          | `get_data_types()`          | [datacategories.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/datacategories.csv)         |
+| [locationcategories](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#locationCategories) | locationcategoryid  | `get_location_categories()` | [locationcategories.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/locationcategories.csv) |
+| [locations](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#locations)                   | locationid          | `get_locations()`           | [locations.csv](https://github.com/adamancer/pyncei/tree/main/pyncei/files/locations.csv)                   |
+| [stations](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#stations)                     | stationid           | `get_stations()`            | –                                                                                                           |
+| [data](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#data)                             | –                   | `get_data()`                | –                                                                                                           |
 
 Each of the NCEIBot get methods accepts either a single positional
 argument (used to return data for a single entity) or a series of
