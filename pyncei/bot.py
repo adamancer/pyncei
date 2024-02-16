@@ -549,7 +549,7 @@ class NCEIBot:
             ) as err:
                 # Add a random number of milliseconds to the wait time to prevent
                 # multiple retries from synchronizing
-                wait = 2 ** i + random.randint(1, 1000) / 1000
+                wait = 2**i + random.randint(1, 1000) / 1000
                 print(
                     f"Retrying temporarily failed request in {wait}s"
                     f" (url={url}, params={params}, error='{err}')"
@@ -997,7 +997,6 @@ class NCEIResponse(list):
         Returns:
             generator of dicts
         """
-        keys = None
         for resp in self:
             metadata = {
                 "url": resp.url,
@@ -1009,12 +1008,11 @@ class NCEIResponse(list):
                 if val:
                     val.update(metadata)
 
-                if not keys:
-                    keys = set(val.keys())
-                    if keys - set(self.key_order):
-                        raise KeyError(
-                            f"Found unordered keys: {keys - set(self.key_order)}"
-                        )
+                keys = set(val.keys())
+                if keys - set(self.key_order):
+                    raise KeyError(
+                        f"Found unordered keys: {keys - set(self.key_order)}"
+                    )
 
                 yield {k: val[k] for k in self.key_order if k in keys}
 

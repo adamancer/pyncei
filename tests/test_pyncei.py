@@ -1,5 +1,6 @@
 import csv
 import os
+from datetime import date
 
 try:
     import geopandas as gpd
@@ -214,6 +215,13 @@ def test_missing_param(ncei):
     ncei.validate_params = True
     with pytest.raises(Exception, match="Required parameters missing"):
         result = ncei.get_data()
+
+
+def test_missing_key_in_results(ncei):
+    stations = ncei.get_stations(datasetid="GHCND", locationid=["FIPS:56"])
+    df = stations.to_dataframe()
+    assert "elevation" in df.columns
+    assert len(df[pd.isna(df["elevation"])])
 
 
 def test_invalid_param_name(ncei):
