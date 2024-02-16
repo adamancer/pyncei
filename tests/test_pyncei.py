@@ -29,6 +29,22 @@ def ncei_cached(output_dir):
         return NCEIBot(f.read().strip(), cache_name=output_dir / "cache")
 
 
+def test_bool_true(ncei_cached):
+    assert ncei_cached
+
+
+def test_bool_false(ncei):
+    resp = ncei.get_data(
+        datasetid="GHCND",
+        stationid="GHCND:USC00140637",
+        datatypeid=["PRCP"],
+        startdate=date(2000, 1, 1),
+        enddate=date(2000, 12, 31),
+    )
+
+    assert not resp
+
+
 def test_cache(ncei_cached):
     result = ncei_cached.get_stations("COOP:010957")
     cached = ncei_cached.get_stations("COOP:010957")

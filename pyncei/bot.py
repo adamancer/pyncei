@@ -985,6 +985,12 @@ class NCEIResponse(list):
     def __repr__(self):
         return str(self)
 
+    def __bool__(self):
+        for resp in self:
+            if resp.json():
+                return True
+        return False
+
     def values(self):
         """Gets the results from all responses
 
