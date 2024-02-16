@@ -10,6 +10,7 @@ import random
 import re
 import time
 import urllib.parse
+import warnings
 
 import pandas as pd
 import requests
@@ -659,7 +660,7 @@ class NCEIBot:
         logger.info(f"Preparing request to {url}")
         if endpoint_id:
             if kwargs:
-                logger.warning(f"Ignoring kwargs: {kwargs}")
+                warnings.warn(f"Ignoring kwargs: {kwargs}")
             # Return URL for a specific endpoint
             return url + f"/{endpoint_id}/", {}
         if self.validate_params:
@@ -761,7 +762,7 @@ class NCEIBot:
                 return ids[0][1], True
         except KeyError:
             # Allow original value through if no lookup is configured
-            logger.warning(f"No lookup list found for {endpoint}")
+            warnings.warn(f"No lookup list found for {endpoint}")
             return value, True
         except AttributeError:
             pass
