@@ -50,7 +50,7 @@ release = '1.0'
 # ones.
 extensions = [
     'm2r2',
-    'sphinx-rtd-theme',
+    'sphinx_rtd_theme',
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.todo',
