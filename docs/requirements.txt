@@ -5,4 +5,4 @@ requests_cache
 
 # ReadTheDocs requirements
 m2r2
-Sphinx~=4.3.2
+Sphinx
